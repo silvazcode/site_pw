@@ -1,276 +1,303 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/control.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/control.png" type="image/x-icon" />
     <title>Jogos multiplayer</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav aria-label="breadcrumb" class="pt-4 pb-2">
-        <ol class="breadcrumb bg-dark rounded-3 px-4 py-2 mb-3 shadow-sm" style="max-width: 500px; margin: 0 auto;">
-            <li class="breadcrumb-item"><a href="navegacao.html" class="text-pink">Navegação</a></li>
-            <li class="breadcrumb-item active text-white" aria-current="page"><a href="multiplayer.html" class="text-pink">jogos multiplayer</a></li>
-        </ol>
+      <ol
+        class="breadcrumb bg-dark rounded-3 px-4 py-2 mb-3 shadow-sm"
+        style="max-width: 500px; margin: 0 auto;"
+      >
+        <li class="breadcrumb-item">
+          <a href="navegacao.html" class="text-pink">Navegação</a>
+        </li>
+        <li
+          class="breadcrumb-item active text-white"
+          aria-current="page"
+        ><a href="multiplayer.html" class="text-pink">Jogos multiplayer</a></li>
+      </ol>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container" id="inicio">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logo_nova.png"
+            alt="Logo"
+            height="120"
+            style="max-width: 320px; width: auto;"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <img src="img/menu_colorido.png" alt="menu colorido" />
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navegacao.html">Navegação</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mais
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="detalhes.html">Detalhes</a></li>
+                <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex ms-4" role="search">
+            <input
+              class="form-control me-2 bg-dark text-white border-0"
+              type="search"
+              placeholder="nome do jogo..."
+              aria-label="Pesquisar"
+            />
+            <button class="btn btn-pink" type="submit">Buscar</button>
+          </form>
+        </div>
+        <div class="d-none d-lg-block ms-3">
+          <img
+            src="img/dia_noite.png"
+            alt="mudar tema do site"
+            style="width: 40px; cursor: pointer;"
+          />
+        </div>
+      </div>
     </nav>
 
-    <header class="custom-navbar">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a class="logo" id="inicio">
-                <img src="img/logo_nova.png" alt="Logo Nova" height="250">
+    <div
+      class="offcanvas offcanvas-end bg-dark text-white"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Fechar"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="search-bar d-flex align-items-center mb-3" role="search">
+          <input class="form-control" type="text" placeholder="nome do jogo..." />
+          <button class="btn text-white" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="navegacao.html">Navegação</a></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              href="#"
+              id="offcanvasDropdown"
+              data-bs-toggle="dropdown"
+            >
+              Mais
             </a>
-            <form class="search-bar d-none d-lg-flex align-items-center" role="search">
-                <input class="form-control" type="text" placeholder="nome do jogo..." />
-                <button class="btn text-white" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-            <button class="navbar-toggler d-block d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <img src="img/menu_colorido.png" alt="menu hamburguer colorido">
-            </button>
-            <nav class="d-none d-lg-flex">
-                <ul class="nav gap-3 align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="navegacao.html">Navegação</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Mais</a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="detalhes.html">Detalhes</a></li>
-                            <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="change-theme" id="change-theme">
-                    <img src="img/dia_noite.png" alt="mudar tema do site">
-                </div>
-            </nav>
-        </div>
-    </header>
-    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-        </div>
-        <div class="offcanvas-body">
-            <form class="search-bar d-flex align-items-center mb-3" role="search">
-                <input class="form-control" type="text" placeholder="nome do jogo..." />
-                <button class="btn text-white" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="navegacao.html">Navegação</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Detalhes</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Streamers</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">Mais</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Opção 1</a></li>
-                        <li><a class="dropdown-item" href="#">Opção 2</a></li>
-                    </ul>
-                </li>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="detalhes.html">Detalhes</a></li>
+              <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
             </ul>
-            <hr class="text-secondary">
-            <div class="change-theme" id="change-theme-offcanvas">
-                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px;">
-            </div>
+          </li>
+        </ul>
+        <hr class="text-secondary" />
+        <div class="change-theme" id="change-theme-offcanvas">
+          <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px;" />
         </div>
+      </div>
     </div>
 
     <h1 class="section-header" style="padding: 15px;">Principais jogos multiplayer</h1>
-        <div class="d-flex justify-content-center my-4">
-            <div class="btn-group" role="group" aria-label="Basic outlined example">
-                 <a type="button" class="group btn btn-outline-secondary" href="navegacao.html">Todos</a>
-                <a type="button" class="group btn btn-outline-secondary" href="acao.html">Ação</a>
-                <a type="button" class="group btn btn-outline-secondary" href="terror.html">Terror</a>
-                <a type="button" class="group btn btn-outline-secondary" href="indie.html">Indie</a>
-            </div>
-        </div>
-
-    <div class="container d-flex flex-column gap-4 mb-5">
-            <!-- Cards de jogos -->
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-            <div class="game-card">
-                <img src="imagem" alt="não sei" class="game-thumb">
-                <div class="game-info">
-                    <h5>algum jogo</h5>
-                    <div>
-                        <span class="rating">★não sei</span>
-                        <span class="players">não sei</span>
-                    </div>
-                    <small class="text-muted">não sei</small>
-                </div>
-            </div>
-        </div>
-
-      <footer class ="custom-footer bg-dark text-white">
-        <div class="container text-center py-4">
-            <p class="mb-0">2025 NEBULA &copy; Todos os direitos reservados.</p>
-            <p class="mb-0">Desenvolvido por <a style="color: blue; pointer-events: none;">Vinicius e Caio</a></p>
+    <div class="d-flex justify-content-center my-4">
+      <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <a type="button" class="group btn btn-outline-secondary" href="navegacao.html">Todos</a>
+        <a type="button" class="group btn btn-outline-secondary" href="acao.html">Ação</a>
+        <a type="button" class="group btn btn-outline-secondary" href="indie.html">Indie</a>
+        <a type="button" class="group btn btn-outline-secondary" href="terror.html">Terror</a>
+      </div>
+    </div>
+    <main>
+      <div class="container d-flex flex-column gap-4 mb-5">
+        <!-- Cards de jogos -->
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
             <div>
-                <a href="#inicio" class="button btn btn-outline-secondary mt-3">Início</a>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
             </div>
+            <small class="text-muted">não sei</small>
+          </div>
         </div>
-    </footer>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="imagem" alt="não sei" class="game-thumb" />
+          <div class="game-info">
+            <h5>algum jogo</h5>
+            <div>
+              <span class="rating">★não sei</span>
+              <span class="players">não sei</span>
+            </div>
+            <small class="text-muted">não sei</small>
+          </div>
+        </div>
+      </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/own_script.js"></script>
-</body>
-</html>
+      <footer class="custom-footer bg-dark text-white">
+        <div class="container text-center py-4">
+          <p class="mb-0">2025 NEBULA &copy; Todos os direitos reservados.</p>
+          <p class="mb-0">
+            Desenvolvido por
+            <a style="color: blue; pointer-events: none;">Vinicius e Caio</a>
+          </p>
+          <div>
+            <a href="#inicio" class="button btn btn-outline-secondary mt-3"
+              >Início</a
+            >
+          </div>
+        </div>
+      </footer>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/own_script.js"></script>
+    </body>
+  </html>
