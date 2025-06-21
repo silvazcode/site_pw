@@ -1,0 +1,310 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+}
+
+.logo {
+    padding: 15px;
+}
+
+.nav-link {
+    color: #fafafa !important;
+}
+
+.nav-link:hover,
+.nav-link.active:hover {
+    color: #e83e8c !important;
+    background-color: transparent !important;
+    transition: color 0.2s;
+}
+
+.nav-link.active,
+.nav-link:focus,
+.nav-link.show {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+.change-theme {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.change-theme img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.form-control {
+    background-color: #18191c !important;
+    color: #fafafa !important;
+    border: 1px solid #232428 !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #020202;
+}
+
+.form-control::placeholder {
+    color: #b0b3b8 !important;
+    opacity: 1;
+}
+
+.custom-section {
+    background-color: #232428;
+    border-radius: 32px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 350px;
+}
+
+.badge-novo {
+    background-color: #e83e8c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    position: absolute;
+    text-decoration: none !important;
+    left: 80%;
+    bottom: 10px;
+    top: auto;
+    right: auto;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 8px rgba(232,62,140,0.18);
+}
+
+.card {
+    background-color: #2d2f36;
+    border-radius: 25px;
+    border: 16px solid rgba(255,255,255,0.05);
+    box-shadow: 0 8px 32px rgba(232,62,140,0.18), 0 2px 16px rgba(0,0,0,0.18);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.5s;
+    position: relative;
+}
+
+.card:hover {
+    background-color: #03030346;
+    transform: translateY(-2%) translateX(-2%);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28), 0 4px 24px rgba(0,0,0,0.25);
+}
+
+.card-img-top {
+    border-radius: 10%;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 2;
+    max-width: 500px;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    color: #fff;
+    opacity: 0.85;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.text-highlight {
+    color: #e83e8c;
+    font-weight: 900;
+}
+
+.btn-pink {
+    background: #e83e8c;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 999px;
+    transition: background 0.2s;
+}
+
+.btn-pink:hover {
+    background-color: #fff !important;
+    color: #e83e8c !important;
+    border: none !important;
+    transition: background 1s;
+}
+
+.games-section {
+    background-color: #232428;
+    border-radius: 32px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.library-img {
+    width: 220px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.button {
+    transition: 0.5s;
+    color: #fff;
+    border: 0.5px solid gray;
+}
+
+.button:hover {
+    background-color: #e83e8c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+@keyframes anim {
+  from { opacity: 1; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Parte do css da navegação */
+
+.section-header {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.group {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: #2d2f36;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+    border: none;
+}
+
+.group:hover {
+    background-color: #e83e8c;
+    color: #fff;
+    transform: scale(1.05);
+    transition: background 0.5s, transform 0.5s;
+    border: none;
+}
+
+.game-card {
+    background-color: #18191c;
+    border-radius: 20px;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    color: #fff;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.game-card:hover {
+    background-color: #2d2f36;
+    transform: scale(1.02);
+}
+
+.game-thumb {
+    width: 160px;
+    height: 100px;
+    
+    border-radius: 10px;
+}
+
+.game-info {
+    flex: 1;
+}
+
+.game-info h5 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.game-info .rating {
+    color: #ffd700;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.game-info .players {
+    color: #e83e8c;
+    font-weight: bold;
+}
+
+.breadcrumb a {
+    color: #e83e8c !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+.breadcrumb a:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+@media (max-width: 576px) {
+    .game-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-thumb {
+        width: 100%;
+        height: auto;
+    }
+
+    .game-info {
+        align-items: center;
+    }
+}

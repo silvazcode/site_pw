@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes UI - Preview</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { padding-top: 40px; }
+    .section-title { color: #fff; margin-top: 3rem; font-weight: 700; font-size: 2rem; }
+  </style>
+</head>
+<body class="bg-dark">
+  <div class="container">
+
+    <!-- Alert -->
+    <div class="alert alert-success text-center" role="alert">
+      Jogo adicionado com sucesso!
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border rounded px-4">
+      <a class="navbar-brand" href="#">GridFrame</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Jogos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Streamers</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h2 class="section-title">Botões</h2>
+    <button class="btn btn-pink">Botão Rosa</button>
+    <button class="btn btn-outline-light">Botão Claro</button>
+
+    <h2 class="section-title">Grupo de Botões</h2>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-outline-light">Todos</button>
+      <button type="button" class="btn btn-outline-light">Ação</button>
+      <button type="button" class="btn btn-outline-light">Indie</button>
+    </div>
+
+    <h2 class="section-title">Card</h2>
+    <div class="card bg-dark text-white" style="width: 18rem;">
+      <img src="img/fortnite.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fortnite <span class="badge bg-danger">+12</span></h5>
+        <p class="card-text">Battle royale frenético da Epic Games.</p>
+        <a href="#" class="btn btn-pink">Jogar</a>
+      </div>
+    </div>
+
+    <h2 class="section-title">Breadcrumb</h2>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Início</a></li>
+        <li class="breadcrumb-item"><a href="#">Jogos</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Ação</li>
+      </ol>
+    </nav>
+
+    <h2 class="section-title">Accordion</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item bg-dark text-white">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Detalhes do jogo
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            Este é um jogo de aventura com mundo aberto e muita exploração.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Carousel</h2>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/banner-bg.jpg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/red_dead_2.png" class="d-block w-100 rounded-3" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
