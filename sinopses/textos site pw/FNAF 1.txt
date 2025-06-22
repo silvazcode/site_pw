@@ -1,0 +1,28 @@
+FNAF 1
+
+INTRO
+
+Five Nights at Freddy's é um jogo eletrônico independente de survival horror desenvolvido e publicado por Scott Cawthon. O jogo se passa em uma pizzaria fictícia chamada "Freddy Fazbear's Pizza", onde o jogador assume o papel de um segurança que deve se defender de personagens animatrônicos do restaurante que se tornam móveis e homicidas à noite.
+
+Scott Cawthon concebeu a ideia de Five Nights at Freddy's depois de receber críticas de seu jogo anterior, Chipper & Sons Lumber Co., um jogo direcionado ao público infantil, por conta de seus personagens involuntariamente assustadores que consistiam em movimentos que se assemelhavam a animatrônicos. Desenvolvido durante seis meses com o uso do motor de jogo Clickteam Fusion 2.5, Five Nights at Freddy's foi lançado para Microsoft Windows em agosto de 2014 no Desura e Steam.Foi posteriormente lançado para Android, iOS e Windows Phone em 2014, e para Nintendo Switch, PlayStation 4 e Xbox One em 2019.
+
+
+Enredo
+
+Os jogadores controlam Mike Schmidt, que se escreveu como um guarda de segurança noturno em um restaurante de pizzaria familiar chamada "Freddy Fazbear's Pizza".[8] Uma mensagem de correio de voz do predecessor de Mike, que os jogadores chamam de "Phone Guy" (Cara do Telefone), toca todas as noites, nas quais Phone Guy conta a Mike sobre diferentes aspectos da história do restaurante, bem como dá dicas sobre a jogabilidade e sobrevivência.[4] Phone Guy explica que os quatro personagens animatrônicos do restaurante — Freddy Fazbear, Bonnie, Chica e Foxy — tornam-se móveis à noite porque seus servomotores travam se ficarem desligados por muito tempo.[9] O funcionário avisa a Mike que, se um dos animatrônicos encontrar um humano depois do expediente, ele os confundirá com um endoesqueleto animatrônico sem fantasia e os "colocará à força" em uma fantasia mecânica de Freddy Fazbear sobressalente, matando a pessoa no processo.[10]
+
+A mensagem de voz menciona "A Mordida de 87", um incidente que supostamente causou a perda do lobo frontal de uma pessoa e forçou a proibição da mobilidade diurna dos animatrônicos.[11] Recortes de jornais no canto leste do corredor do restaurante revelam relatos de assassinatos que ocorreram no local, onde um homem atraiu cinco crianças para um quarto dos fundos, depois as matou. De acordo com os recortes, a polícia acredita que o homem usava um traje de mascote para ganhar a confiança das crianças. O suspeito foi indiciado e condenado. Mais tarde, o restaurante recebeu reclamações de que os animatrônicos começaram a emitir odores desagradáveis ​​enquanto sangue e muco vazavam de seus olhos e bocas, com um cliente comparando-os a "carcaças reanimadas", implicando que os cadáveres das crianças foram colocados dentro dos animatrônicos. Isso se compara ao que o Phone Guy diz na Noite 1; “Se você fosse enfiado nos trajes, a única parte de você que provavelmente veria a luz do dia seriam seus olhos e boca, quando eles saírem da máscara.”[8]
+
+Após a quarta noite, Mike não recebe mais mensagens de voz de Phone Guy, que está implícito por ter sido morto por um dos animatrônicos enquanto gravava a quarta mensagem.[12] Uma mensagem de voz ainda toca na quinta noite, mas consiste apenas em um som distorcido.[13] Ao completar a quinta e sexta noites,[14][15] Mike recebe o pagamento, mas ele é demitido assim que a sétima "noite customizada" é concluída.
+
+
+Jogabilidade
+Five Night at Freddy's é um jogo eletrônico de survival horror com elementos de point-and-click.[1] O jogador atua como segurança noturno de uma pizzaria fictícia, e deve completar seu turno que dura de meia-noite até às seis da manhã (8 minutos e 36 segundos) sem ser assustado pelos quatro personagens animatrônicos que habitam a instalação.[2]
+
+O jogador, sozinho em um escritório, tem acesso a uma rede de câmeras de segurança que fornecem vistas de várias partes do restaurante.[3] Essas câmeras são usadas para rastrear os movimentos dos animatrônicos durante a noite. Cada personagem animatrônico possui padrões de movimentos distintos, e a maior parte desses movimentos ocorre fora da tela.[4][5] A rede de câmeras é pouco iluminada e composta por ruídos, e uma câmera de segurança, localizada na cozinha, fornece apenas uma escuta de áudio.[3] As câmeras não cobrem certas áreas do edifício, principalmente os dois corredores diretamente à esquerda e à direita do jogador, que exigem verificação por luzes que o jogador pode controlar clicando em um botão localizado ao lado de cada porta em seu escritório.[3] O jogador não pode sair do escritório e deve fechar as portas do mesmo para autodefesa, o que também pode ser feito clicando nos botões adjacentes a cada porta.[2]
+
+O uso dessas mecânicas (câmeras, luzes e portas) consome energia elétrica limitada do jogador; se toda energia acabar, as câmeras ficam inoperantes, as portas abrem e as luzes se apagam.[4][6] O principal animatrônico do restaurante, Freddy Fazbear, aparecerá posteriormente na porta esquerda com luzes piscando em seus olhos, enquanto uma versão em caixa de música da canção "Toreador March" toca.[2] Após um período de tempo aleatório, o escritório ficará escuro e Freddy dará um jumpscare no jogador, resultando no final do jogo, a menos que o jogador chegue às 6 da manhã antes que isso ocorra. Se o jogador sofrer um jumpscare por qualquer um dos animatrônicos, deverá reiniciar desde o início da noite.[3]
+
+Five Nights at Freddy's possui cinco níveis que compreendem cinco "noites" no jogo, cada um aumentando em dificuldade.[2]
+
+

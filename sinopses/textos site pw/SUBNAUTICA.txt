@@ -1,0 +1,28 @@
+SUBNAUTICA
+
+
+JOGABILIDADE
+Subnautica é um jogo de ação e aventura de sobrevivência ambientado em um mundo aberto e jogado em primeira pessoa . O jogador controla o único sobrevivente da nave espacial acidentada conhecida como Aurora , Ryley Robinson, que está preso em um remoto planeta oceânico conhecido como 4546B.
+
+O objetivo principal é explorar o oceano e sobreviver aos seus perigos enquanto completa tarefas para avançar na trama. Os jogadores podem coletar recursos e projetos, construir ferramentas, bases e submersíveis e interagir com a vida selvagem do planeta. Alguns dos perigos mais extremos para o jogador incluem, mas não se limitam a: Lulas-caranguejo, Warpers, Mesmers, Tubarões-ossos, Ampeels, Stalkers, Crashfish e formas de vida da classe Leviathan, como o Reaper, Sea Dragon e Ghost Leviathans. [ 2 ] [ 3 ] [ 4 ]
+
+A maior parte do jogo se passa debaixo d'água, com duas ilhas exploráveis ​​e um ciclo simulado de dia e noite que afeta a visibilidade, além de um eclipse que acontece com frequência. Ao iniciar um novo jogo, os jogadores podem escolher entre quatro modos de dificuldade:
+
+No modo de sobrevivência, o jogador gerencia sua saúde, fome, sede e oxigênio, que vão diminuindo. Se o jogador morrer, ele reaparece , mas certos itens são removidos de seu inventário.
+No modo liberdade, a jogabilidade é quase idêntica à do modo sobrevivência, mas sem fome e sede.
+No modo hardcore, a jogabilidade inclui morte permanente . Se o jogador morrer, ele não reaparecerá e seu arquivo salvo será excluído permanentemente. Além disso, o jogador não receberá avisos de níveis baixos de oxigênio como em outros modos.
+No modo criativo, todas as características que se esgotam, como saúde e sede, são removidas. Todos os projetos são desbloqueados, permitindo que os jogadores criem sem a necessidade de recursos. Além disso, o jogador começa com um rifle de estase, um Seaglide, um compartimento de veículo móvel e um canhão de propulsão. Todos os itens, estruturas de base e veículos não requerem fonte de energia para operar, e os veículos são imunes à profundidade de esmagamento.
+O jogo suporta headsets de VR, como o HTC Vive e o Oculus Rift , com a entrada adicional de um teclado e mouse ou controlador de jogo.
+
+
+
+ENREDO
+Enquanto procurava por minerais, a nave espacial Degasi cai no mundo oceânico 4546B. Três de seus tripulantes sobrevivem, vivendo por um período indeterminado no planeta. Dez anos depois, a nave espacial Aurora cai em 4546B. Ryley Robinson (o jogador) escapa para o planeta com uma cápsula salva-vidas. Ele tenta contatar outros sobreviventes, mas descobre que é o único que resta. Ele é contatado pela nave mercante Sunbeam , respondendo ao SOS da Aurora . Quando a Sunbeam tenta resgatar Ryley, é abatida por uma construção alienígena.
+
+O jogador investiga a construção e descobre que uma raça alienígena, os Arquitetos, colocou o planeta em quarentena. Eles construíram uma Plataforma de Aplicação da Quarentena, abatendo qualquer nave que tentasse entrar ou sair do planeta. Ryley tenta desativar a arma, mas descobre que está infectado com a bactéria Kharaa, o que o impede de fazê-lo. Criaturas alienígenas conhecidas como Warpers começam a caçá-lo. A bordo dos destroços da Aurora , ele usa o transponder da nave para receber projetos para um foguete de fuga. Ele começa a ter alucinações com uma criatura misteriosa.
+
+O jogador se aventura mais profundamente em 4546B. Ele descobre uma instalação de pesquisa alienígena onde os Warpers, na verdade unidades de execução de quarentena, foram construídos. Ele descobre que 1000 anos atrás, os Arquitetos trouxeram Kharaa para 4546B para procurar uma cura. Aventurando-se mais profundamente para encontrar uma possível vacina, ele descobre o Imperador do Mar, uma criatura enorme, que tem se comunicado telepaticamente com Ryley através das alucinações. O último de sua espécie, os Arquitetos tentaram aproveitar a Enzima 42 dele para usar como uma cura, mas o Imperador do Mar era muito velho e fraco. Eles tentaram forçar seus filhotes a eclodir, mas eles morreram logo depois. Os Arquitetos desapareceram misteriosamente, e o Imperador do Mar está preso em um aquário desde então.
+
+Após ativar um teletransportador para permitir que os filhotes do Imperador do Mar partam, o Imperador do Mar dá ao jogador o conhecimento de como produzir enzimas de eclosão. Usando-as, os filhotes do Imperador do Mar eclodem e secretam a Enzima 42, curando Ryley e o oceano como um todo. Finalmente em paz, o Imperador do Mar se despede de Ryley e morre. Um jogador, agora curado, desativa a Plataforma de Execução da Quarentena e escapa do planeta no foguete. Enquanto faz isso, recebe uma última mensagem telepática do Imperador do Mar.
+
+Em uma cena pós-créditos , o PDA de Ryley o notifica que ele não poderá pousar até que sua dívida de 1 trilhão de créditos pelo uso dos recursos da Alterra seja paga.

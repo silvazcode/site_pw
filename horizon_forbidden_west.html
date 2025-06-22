@@ -8,8 +8,144 @@
     <link rel="shortcut icon" href="img/control.png" type="image/x-icon">
     <title>Horizon</title>
 </head>
+<style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .section-header {
+      color: #fff;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 2rem;
+    }
+
+    .text-highlight {
+      color: #e83e8c;
+      font-weight: bold;
+    }
+
+    .carousel-inner img {
+      border-radius: 20px;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .accordion-button {
+      background-color: #2d2f36;
+      color: #fff;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #18191c;
+      color: #e83e8c;
+    }
+
+    .accordion-body {
+      background-color: #232428;
+    }
+
+    .btn-pink {
+      background: #e83e8c;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      border-radius: 30px;
+      padding: 10px 20px;
+      transition: background 0.3s;
+    }
+
+    .btn-pink:hover {
+      background: #fff;
+      color: #e83e8c;
+    }
+
+    .container-custom {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #232428;
+      border-radius: 32px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
 <body>
-    
-    <script src="js/bootstrap.min.js"></script>
+
+  <div class="container container-custom">
+    <h1 class="section-header">Conheça <span class="text-highlight">Horizon: Forbidden West</span></h1>
+
+    <!-- Carousel -->
+    <div id="carouselJogo" class="carousel slide mb-5" data-bs-ride="carousel" span="border 11px">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/img jogos/horizon/horizon img2.jpeg" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/img jogos/horizon/Horizon_Forbidden_West_20220211184602 (convert.io).jpg" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/img jogos/horizon/HorizonCapa.png" class="d-block w-100" alt="Imagem 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselJogo" data-bs-slide="prev">
+        <span class="fa-solid fa-chevron-left fa-2x" style="color:#e83e8c;" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselJogo" data-bs-slide="next">
+        <span class="fa-solid fa-chevron-right fa-2x" style="color:#e83e8c;" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <!-- Accordion -->
+    <div class="accordion" id="accordionJogo">
+     <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#descricao" aria-expanded="true">
+            Descrição
+          </button>
+        </h2>
+        <div id="descricao" class="accordion-collapse collapse show" data-bs-parent="#accordionJogo">
+          <div class="accordion-body" style="color: whitesmoke;">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus blandit quis suspendisse aliquet nisi sodales consequat magna ante condimentum neque at luctus nibh finibus facilisis dapibus etiam interdum tortor ligula congue sollicitudin erat viverra ac tincidunt nam porta elementum a enim euismod quam justo lectus commodo augue arcu dignissim velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend turpis fames primis vulputate ornare sagittis vehicula praesent dui felis venenatis ultrices proin libero feugiat tristique accumsan maecenas potenti ultricies habitant morbi senectus netus suscipit auctor curabitur facilisi cubilia curae hac habitasse platea dictumst lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mecanicas">
+            Mecânicas
+          </button>
+        </h2>
+        <div id="mecanicas" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+          <div class="accordion-body"  style="color: whitesmoke;">
+            <p>Horizon Forbidden West é um RPG de ação jogado em uma perspectiva de terceira pessoa , ambientado em um mundo povoado por máquinas perigosas e animalescas. O jogador controla Aloy , uma caçadora que se aventura em uma fronteira desconhecida conhecida como Forbidden West, uma versão pós-apocalíptica do oeste dos Estados Unidos , para investigar uma praga misteriosa. [ 1 ] As principais armas de escolha de Aloy são arcos e flechas . Outras armas no jogo incluem uma blastsling, que permite a Aloy lançar bombas em direção aos inimigos, e uma Shredder Gauntlet, que lança discos serrilhados úteis para rasgar armaduras e componentes. Ela também pode colocar armadilhas e fios de disparo , e usar o ropecaster para amarrar os inimigos ao chão, imobilizando-os. [ 2 ] Certas armas no jogo têm diferentes tipos de munição, permitindo ao jogador infligir dano elemental aos inimigos. Por exemplo, munição ácida pode derreter a armadura de um oponente, enquanto munição de choque pode atordoar os inimigos. Danos elementais também podem ser encadeados. Por exemplo, flechas de purga podem resultar em um "status encharcado" para uma máquina, tornando-as mais vulneráveis ​​a flechas de choque e impedindo-as de desencadear ataques elementais próprios. O status elemental de uma máquina irá se acumular gradualmente, e a máquina será significativamente afetada ou danificada por esse status elemental por um breve período de tempo, uma vez que um medidor esteja completamente cheio. [ 3 ] O jogador pode usar o Focus de Aloy, um dispositivo de realidade aumentada vestível que ela coletou durante os eventos do primeiro jogo que lhe dá habilidades perceptivas especiais, para marcar um inimigo e escaneá-lo para identificar suas fraquezas. [ 4 ] Aloy também pode destacar partes das máquinas por meio de seus ataques, prejudicando uma grande quantidade de sua saúde , removendo suas capacidades de ataque e, ocasionalmente, permitindo que ela use suas próprias armas destacadas contra elas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#informacoes">
+            Informações Técnicas
+          </button>
+        </h2>
+        <div id="informacoes" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+          <div class="accordion-body"  style="color: whitesmoke;">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus blandit quis suspendisse aliquet nisi sodales consequat magna ante condimentum neque at luctus nibh finibus facilisis dapibus etiam interdum tortor ligula congue sollicitudin erat viverra ac tincidunt nam porta elementum a enim euismod quam justo lectus commodo augue arcu dignissim velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend turpis fames primis vulputate ornare sagittis vehicula praesent dui felis venenatis ultrices proin libero feugiat tristique accumsan maecenas potenti ultricies habitant morbi senectus netus suscipit auctor curabitur facilisi cubilia curae hac habitasse platea dictumst lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn btn-pink">Voltar para o Início</a>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
