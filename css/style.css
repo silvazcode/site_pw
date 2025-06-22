@@ -292,6 +292,135 @@ nav {
     color: #fff !important;
 }
 
+/* css das paginas de jogos*/
+:root {
+    --rosa: #ff2e8b;
+    --preto: #18181c;
+    --cinza: #23232b;
+    --cinza-claro: #ccc;
+}
+.jogos-body {
+    background: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+.jogos-conteudo-destaque {
+    background: #212529;
+    border-radius: 28px;
+    max-width: 1350px;
+    margin: 60px auto 0 auto;
+    padding: 60px 40px 40px 40px;
+    box-shadow: 0 0 32px 0 #000a;
+}
+.jogos-container-flex {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.jogos-carousel {
+    flex: 2;
+    min-width: 320px;
+    max-width: 700px;
+}
+
+.jogos-carousel-inner img {
+    border-radius: 12px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+.jogos-carousel-control-prev, .tlou-carousel-control-next {
+    width: 7%;
+}
+.jogos-carousel-control-prev .fa-chevron-left,
+.jogos-carousel-control-next .fa-chevron-right {
+    color: #e83e8c;
+    font-size: 2.8rem;
+    text-shadow: 0 0 10px #000a;
+}
+.jogos-side-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: #2d2f36;
+    border-radius: 12px;
+    padding: 28px 24px;
+    min-width: 320px;
+    max-width: 350px;
+    height: fit-content;
+    align-self: center;
+}
+.jogos-game-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e83e8c;
+    margin-bottom: 10px;
+}
+.jogos-rating {
+    background: #2d2d36;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #e83e8c;
+    font-weight: bold;
+}
+.jogos-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.05rem;
+}
+.jogos-info-list li {
+    margin-bottom: 8px;
+    color: #fff;
+}
+.jogos-info-label {
+    color: #e83e8c;
+    font-weight: bold;
+}
+.jogos-description {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #2d2f36;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.jogos-left-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+  min-width: 320px;
+  max-width: 700px;
+}
+.jogos-trailer {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 24px auto;
+}
+.jogos-trailer iframe {
+  width: 100%;
+  height: 394px;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 4px 16px #000;
+}
+
+@media (max-width: 900px) {
+    .tlou-trailer iframe {
+        width: 100%;
+        height: 220px;
+    }
+}
+
 @media (max-width: 576px) {
     .game-card {
         flex-direction: column;
@@ -307,4 +436,54 @@ nav {
     .game-info {
         align-items: center;
     }
+}
+@media (max-width: 1100px) {
+    .tlou-container-flex {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .tlou-left-col {
+        max-width: 100%;
+        width: 100%;
+    }
+    .tlou-trailer iframe {
+        height: 220px;
+    }
+}
+
+.accordion {
+    padding: 16px 12px;
+}
+
+.accordion-item {
+    background-color: #2d2f36 !important;
+    border: 2px solid #e83e8c !important;
+    border-radius: 12px !important;
+    margin-bottom: 50px;
+}
+
+.accordion-button {
+    background-color: #23232b !important;
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 12px !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: background 0.2s, color 0.2s;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e83e8c !important;
+    color: #fff !important;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 2px #e83e8c40 !important;
+}
+
+.accordion-body {
+    background-color: #23232b !important;
+    color: #fafafa !important;
+    border-radius: 0 0 12px 12px;
 }

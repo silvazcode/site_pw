@@ -1,15 +1,200 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>The Last of Us Part II</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="shortcut icon" href="img/control.png" type="image/x-icon">
-    <title>Document</title>
 </head>
-<body>
-    
-    <script src="js/bootstrap.min.js"></script>
+<body class="jogos">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container" id="inicio">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_nova.png" alt="Logo" height="120" style="max-width: 320px; width: auto" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <img src="img/menu_colorido.png" alt="menu colorido" />
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="navegacao.html">Navegação</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Detalhes</a></li>
+                            <li><a class="dropdown-item" href="#">Streamers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-4" role="search">
+                    <input class="form-control me-2 bg-dark text-white border-0" type="search" placeholder="nome do jogo..." aria-label="Pesquisar" />
+                    <button class="btn btn-pink" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="d-none d-lg-block ms-3">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px; cursor: pointer" />
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="search-bar d-flex align-items-center mb-3" role="search">
+                <input class="form-control" type="text" placeholder="nome do jogo..." />
+                <button class="btn text-white" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="navegacao.html">Navegação</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">
+                        Mais
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="detalhes.html">Detalhes</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="streamers.html">Streamers</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr class="text-secondary" />
+            <div class="change-theme" id="change-theme-offcanvas">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px" />
+            </div>
+        </div>
+    </div>
+    <div class="jogos-conteudo-destaque">
+        <div class="jogos-container-flex">
+            <div class="jogos-left-col">
+                <div class="jogos-trailer mb-4">
+                    <iframe width="700" height="394" src="https://www.youtube.com/embed/W2Wnvvj33Wo" 
+                        title="The Last of Us Part I - Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div id="jogosCarousel" class="carousel slide jogos-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner jogos-carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/clair_obscure_expedition.png" alt="The Last of Us 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/the_last_of_us.png" alt="The Last of Us 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/horizon_forbidden_west.png" alt="The Last of Us 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/days_gone.png" alt="The Last of Us 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/minecraft.png" alt="The Last of Us 5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev jogos-carousel-control-prev" type="button" data-bs-target="#jogosCarousel" data-bs-slide="prev">
+                        <span class="visually-hidden">Anterior</span>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-control-next jogos-carousel-control-next" type="button" data-bs-target="#jogosCarousel" data-bs-slide="next">
+                        <span class="visually-hidden">Próximo</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="jogos-side-info ms-5">
+                <div class="jogos-game-title">The Last of Us™ Part II</div>
+                <div class="jogos-rating">18 anos | Violência, Linguagem Imprópria</div>
+                <ul class="jogos-info-list">
+                    <li><span class="jogos-info-label">Gênero:</span> Ação, Aventura, Sobrevivência</li>
+                    <li><span class="jogos-info-label">Desenvolvedor:</span> Naughty Dog, PlayStation Studios</li>
+                    <li><span class="jogos-info-label">Lançamento:</span> 02 de setembro de 2022</li>
+                    <li><span class="jogos-info-label">Plataformas:</span> PlayStation 5, PC</li>
+                    <li><span class="jogos-info-label">Classificação:</span> 18 anos</li>
+                </ul>
+                <div class="jogos-preco-link mt-4">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: #e83e8c;">
+                        R$ 199,90
+                    </div>
+                    <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/" target="_blank" 
+                        class="btn btn-pink mt-2" style="font-weight: bold;">
+                        Ver na Steam <i class="fab fa-steam"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="jogos-description">
+            Viva a emocionante jornada de Joel e Ellie em um mundo devastado por uma pandemia. The Last of Us™ Part I traz gráficos aprimorados, jogabilidade envolvente e uma narrativa inesquecível.
+        </div>
+        <div class="accordion mt-3" id="accordionJogo">
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#descricao" aria-expanded="true">
+                        Descrição
+                    </button>
+                </h2>
+                <div id="descricao" class="accordion-collapse collapse show" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus blandit quis suspendisse aliquet nisi sodales consequat magna ante condimentum neque at luctus nibh finibus facilisis dapibus etiam interdum tortor ligula congue sollicitudin erat viverra ac tincidunt nam porta elementum a enim euismod quam justo lectus commodo augue arcu dignissim velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend turpis fames primis vulputate ornare sagittis vehicula praesent dui felis venenatis ultrices proin libero feugiat tristique accumsan maecenas potenti ultricies habitant morbi senectus netus suscipit auctor curabitur facilisi cubilia curae hac habitasse platea dictumst lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mecanicas">
+                        Mecânicas
+                    </button>
+                </h2>
+                <div id="mecanicas" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus blandit quis suspendisse aliquet nisi sodales consequat magna ante condimentum neque at luctus nibh finibus facilisis dapibus etiam interdum tortor ligula congue sollicitudin erat viverra ac tincidunt nam porta elementum a enim euismod quam justo lectus commodo augue arcu dignissim velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend turpis fames primis vulputate ornare sagittis vehicula praesent dui felis venenatis ultrices proin libero feugiat tristique accumsan maecenas potenti ultricies habitant morbi senectus netus suscipit auctor curabitur facilisi cubilia curae hac habitasse platea dictumst lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#informacoes">
+                        Informações Técnicas
+                    </button>
+                </h2>
+                <div id="informacoes" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus blandit quis suspendisse aliquet nisi sodales consequat magna ante condimentum neque at luctus nibh finibus facilisis dapibus etiam interdum tortor ligula congue sollicitudin erat viverra ac tincidunt nam porta elementum a enim euismod quam justo lectus commodo augue arcu dignissim velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend turpis fames primis vulputate ornare sagittis vehicula praesent dui felis venenatis ultrices proin libero feugiat tristique accumsan maecenas potenti ultricies habitant morbi senectus netus suscipit auctor curabitur facilisi cubilia curae hac habitasse platea dictumst lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="custom-footer bg-dark text-white mt-3">
+        <div class="container text-center py-4">
+            <p class="mb-0">2025 NEBULA &copy; Todos os direitos reservados.</p>
+            <p class="mb-0">
+                Desenvolvido por
+                <a style="color: blue; pointer-events: none;">Vinicius e Caio</a>
+            </p>
+            <div>
+                <a href="#inicio" class="button btn btn-outline-secondary mt-3">Início</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
