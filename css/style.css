@@ -56,6 +56,14 @@ body {
     opacity: 1;
 }
 
+.alert-index {
+    background-color: #e83e8c;
+    color: #fff;
+    border: none;
+    width: 900px;
+    max-width: 1000px;
+}
+
 .custom-section {
     background-color: #232428;
     border-radius: 32px;
@@ -438,17 +446,20 @@ nav {
     }
 }
 @media (max-width: 1100px) {
-    .tlou-container-flex {
+    .jogos-container-flex {
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
-    .tlou-left-col {
+    .jogos-side-info {
         max-width: 100%;
         width: 100%;
+        align-self: unset;
+        margin-left: 0;
     }
-    .tlou-trailer iframe {
-        height: 220px;
+    .alert-index {
+        width: 70%;
+        text-align: center;
     }
 }
 
@@ -486,4 +497,21 @@ nav {
     background-color: #23232b !important;
     color: #fafafa !important;
     border-radius: 0 0 12px 12px;
+}
+
+/* Streamers cards customização */
+.streamer-card {
+    background-color: #2d2f36;
+    border: 2px solid #ff2e8b;
+}
+.streamer-card .card-title {
+    color: #ff2e8b;
+}
+.streamer-card .card-img-top {
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin: 1.5rem auto 0 auto;
+    display: block;
 }
