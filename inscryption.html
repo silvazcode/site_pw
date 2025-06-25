@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscryption</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/control.png" type="image/x-icon">
+</head>
+<body class="jogos">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container" id="inicio">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_nova.png" alt="Logo" height="120" style="max-width: 320px; width: auto" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <img src="img/menu_colorido.png" alt="menu colorido" />
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="navegacao.html">Navegação</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-4" role="search">
+                    <input class="form-control me-2 bg-dark text-white border-0" type="search" placeholder="nome do jogo..." aria-label="Pesquisar" />
+                    <button class="btn btn-pink" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="d-none d-lg-block ms-3">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px; cursor: pointer" />
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="search-bar d-flex align-items-center mb-3" role="search">
+                <input class="form-control" type="text" placeholder="nome do jogo..." />
+                <button class="btn text-white" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="navegacao.html">Navegação</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">
+                        Mais
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="streamers.html">Streamers</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr class="text-secondary" />
+            <div class="change-theme" id="change-theme-offcanvas">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px" />
+            </div>
+        </div>
+    </div>
+    <div class="jogos-conteudo-destaque">
+        <div class="jogos-container-flex">
+            <div class="jogos-left-col">
+                <div class="jogos-trailer mb-4"> <!-- Coloca o vídeo do youtube no src da linha de baixo depois apaga o comentário -->
+                    <iframe width="700" height="394" src="https://www.youtube.com/v=BRlnP67TAf4"  
+                        title="Inscryption - Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div id="jogosCarousel" class="carousel slide jogos-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner jogos-carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/img jogos/Inscryption/Inscryption 1.jpg" alt="Inscryption 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img jogos/Inscryption/inscryption 2.jpg" alt="Inscryption 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img jogos/Inscryption/inscryption 5.jpg" alt="Inscryption 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img jogos/Inscryption/inscryption 4.jpg" alt="Inscryption 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img jogos/Inscryption/Inscryption extra.jpg" alt="Inscryption 5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev jogos-carousel-control-prev" type="button" data-bs-target="#jogosCarousel" data-bs-slide="prev">
+                        <span class="visually-hidden">Anterior</span>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-control-next jogos-carousel-control-next" type="button" data-bs-target="#jogosCarousel" data-bs-slide="next">
+                        <span class="visually-hidden">Próximo</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="jogos-side-info ms-lg-5">
+                <div class="jogos-game-title">Inscryption</div>
+                <div class="jogos-rating"> </div>
+                <ul class="jogos-info-list">
+                    <li><span class="jogos-info-label">Classificação: <img src="img/img jogos/idade 14.png" alt="Não recomendado para menores de 14 anos"></span> </li>
+                    <li><span class="jogos-info-label">Gênero:</span> </li>
+                    <li><span class="jogos-info-label">Desenvolvedor:</span> </li>
+                    <li><span class="jogos-info-label">Lançamento:</span> </li>
+                    <li><span class="jogos-info-label">Plataformas:</span> </li>
+                    
+                </ul>
+                <div class="jogos-preco-link mt-4">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: #e83e8c;">
+                        R$ 49,99
+                    </div>
+                    <a href="https://store.steampowered.com/app/1092790/Inscryption/" target="_blank" 
+                        class="btn btn-pink mt-2" style="font-weight: bold;">
+                        Ver na Steam <i class="fab fa-steam"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="jogos-description">
+           <p>Inscryption é uma daquelas experiências que começa parecendo algo familiar e logo te puxa para dentro de um abismo de surpresas, tensão e quebra total de expectativas. Desenvolvido por Daniel Mullins, o mesmo criador de Pony Island, o jogo começa como um estranho e sombrio deckbuilder, com partidas de cartas ambientadas em uma cabana abafada, onde um interlocutor sinistro narra seus movimentos com olhos brilhando na escuridão. Mas rapidamente fica claro: isso não é só um jogo de cartas. É uma armadilha narrativa, uma experiência metalinguística e um quebra-cabeça que vai além da quarta parede.</p>
+           <p>A cada jogada, Inscryption revela mais de sua verdadeira natureza. Elementos de horror psicológico, mistério e até mesmo found footage digital se misturam à mecânica clássica de construção de baralho. O jogador não apenas monta estratégias, ele explora a cabana, desbloqueia segredos físicos, mexe em arquivos falsos, quebra o jogo de dentro para fora. O que começa como um ritual com criaturas sacrificáveis e decisões morais perturbadoras se transforma em algo muito maior: uma crítica ao próprio conceito de jogos, controle e narrativa interativa.</p> 
+           <p></p>
+       
+        </div>
+        <div class="accordion mt-3" id="accordionJogo">
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#descricao" aria-expanded="true">
+                        <h4>Jogabilidade</h4>
+                    </button>
+                </h2>
+                <div id="descricao" class="accordion-collapse collapse show" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        <p>Inscryption é um jogo de construção de baralho roguelike . O jogo em si é dividido em três atos, onde a natureza deste jogo de construção de baralho muda, mas as regras fundamentais de como o jogo de cartas é jogado permanecem as mesmas. O jogo de cartas é jogado em uma grade 3x4 que mais tarde é expandida para uma grade 3x5 durante o terceiro ato; o jogador joga suas cartas na linha inferior, enquanto seu oponente joga cartas antecipadamente na linha superior, que são automaticamente movidas para o jogo na linha do meio no próximo turno. Cada carta tem um valor de ataque e saúde. No turno do jogador ou do oponente, depois que suas cartas são jogadas, cada uma de suas cartas ataca a carta do oponente na mesma coluna, distribuindo seu valor de ataque à saúde daquela carta. Se esse ataque reduzir a saúde da carta a zero ou menos, aquela carta é removida. Se a carta atacante não tiver oposição, então a carta ataca o oponente diretamente com aquela quantidade de dano. O dano é rastreado em uma balança , usando dentes para representar cada ponto de dano recebido por aquele jogador. O objetivo é inclinar o lado do oponente na balança por uma diferença de cinco dentes antes que ele possa fazer o mesmo com o lado do jogador. Além do valor de ataque, cada carta possui vários símbolos que representam habilidades especiais, como a capacidade de voar além de um bloqueador ou atacar várias colunas a cada turno.</p>
+                        <p>Cada carta tem um custo para jogar, que depende de qual dos Scrybes a criou. As criadas por P03 usam energia; o jogador começa com 1 de energia no início de cada jogo, reabastecendo e ganhando uma barra adicional a cada turno. As criadas por Leshy exigem um sacrifício de sangue de cartas já em jogo no tabuleiro. As cartas de Grimora exigem fichas de osso para jogar, obtidas quando cartas são derrotadas ou sacrificadas. As cartas de Magnificus exigem que uma das três gemas esteja presente no tabuleiro para serem jogadas e permanecerem no jogo, sendo perdidas se a gema sair de jogo.</p>
+                        <p>O jogo é compostopor partes,os atos. Durante o primeiro ato do jogo, em que Leshy assumiu o código Inscryption , o jogador vê o jogo da perspectiva de primeira pessoa , enfrentando Leshy em sua cabine, embora essa informação não seja dita ao jogador. Durante este ato, o jogo funciona como um jogo de construção de deck roguelike , onde o jogador recebe um deck inicial simples, baseado apenas nos tipos de cartas de Leshy e Grimora. O jogo prossegue através de quatro mapas gerados aleatoriamente de vários encontros apresentados por Leshy, que incluem batalhas de cartas com Leshy e oportunidades de adicionar ou remover cartas de seu deck, ou ganhar itens que podem ser usados ​​durante as batalhas de cartas para inclinar as probabilidades a seu favor. Cada um dos três primeiros mapas termina com um encontro com um mini-chefe, enquanto o mapa final é uma batalha com Leshy. Se o jogador perder duas vezes em um mapa, ou uma vez durante uma batalha de chefe, eles são pegos por Leshy e transformados em uma carta da morte com sua câmera, que pode aparecer em corridas posteriores. Entre os encontros, o jogador também pode se levantar da mesa e olhar ao redor da cabana, resolvendo quebra-cabeças semelhantes a uma sala de escape , descobrindo pistas para localizar as formas das cartas de P03, Grimora e Magnificus. Ao derrotar Leshy, o jogo entra no segundo ato.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mecanicas">
+                        <h4>Enredo</h4>
+                    </button>
+                </h2>
+                <div id="mecanicas" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        <p>O jogo é apresentado como uma filmagem encontrada gravada por Luke Carder, um criador de conteúdo da internet especializado em jogos de cartas colecionáveis ​​sob o pseudônimo de "The Lucky Carder". Antes do início do jogo, Carder, ao abrir um maço de cartas antigas, pouco conhecidas e fora de catálogo, conhecido como Inscryption , encontra dentro um conjunto de coordenadas manuscritas indicando um local próximo ao seu. Lá, ele encontra, enterrado sob a terra em uma floresta, uma caixa contendo um disquete intitulado Inscryption . O disquete acaba sendo um videogame Inscryption , embora Carder não consiga encontrar nenhum vestígio de sua existência na internet. Ele liga o jogo, mas descobre que não consegue iniciar um novo jogo e, em vez disso, é forçado a selecionar a opção "Continuar Jogo".</p>
+                        <p>No jogo, o personagem anônimo de Carder interage com um negociante misterioso chamado Leshy dentro de uma cabana, onde eles devem jogar um jogo de tabuleiro centrado em cartas com Leshy como mestre do jogo . Toda vez que Carder perde, Leshy usa uma câmera mágica para capturar a alma do personagem em uma "carta da morte", e Carder reinicia como outro personagem. Entre as rodadas, o personagem de Carder pode se mover pela cabana e resolver quebra-cabeças para obter várias vantagens no jogo de tabuleiro; eles também encontram três cartas sencientes , o Arminho, o Percevejo e o Lobo Atordoado, que trabalham em conjunto com o personagem de Carder para encontrar um rolo de filme e vencer o jogo de tabuleiro de Leshy. Após a vitória, o personagem de Carder rouba a câmera, usa o rolo de filme para capturar Leshy dentro de uma carta e encontra o botão "Novo Jogo" que estava faltando anteriormente. Ao adquiri-lo e selecionar esta nova opção, Carder pode jogar o jogo de disco Inscryption em sua forma original.</p>
+                        <p>Em sua forma original, o jogo em disco é radicalmente diferente de quando Carder começou a jogar, embora gire em torno de um sistema de cartas semelhante ao do jogo de tabuleiro. Ele se passa em um mundo governado pelos quatro "Scrybes": Leshy, o Scrybe das Feras que havia assumido o controle do jogo no jogo salvo originalmente usado por Carder; P03, o Scrybe da Tecnologia; Grimora, o Scrybe dos Mortos; e Magnificus, o Scrybe das Magias. P03, Grimora e Magnificus foram encontrados anteriormente como o Arminho, o Percevejo e o Lobo Atrofiado, respectivamente, tendo sido aprisionados na versão do jogo em disco liderada por Leshy e transformados em cartas. O personagem jogável de Carder chega a este mundo buscando desafiar os Scrybes; Após derrotar os quatro, eles escolhem um Scrybe para desafiar novamente, na esperança de tomar o lugar deles, mas P03 aparece e luta contra o jogador de qualquer maneira, usando uma falha para derrotá-lo e assumir o controle do jogo, assim como Leshy fez. Entre as sessões de jogo, Carder, cada vez mais obcecado pelo jogo em disco, continua sua investigação sobre suas origens e contata a editora das cartas Inscryption , a GameFuna; a GameFuna nega a existência do jogo, ao mesmo tempo em que exige sua devolução com veemência, enviando repetidamente um representante para reforçar a demanda, que Carder manda embora.</p>
+                        <h6>Ficou intrigado com os mistérios por trás deste jogo? Tire suas duvidas comprando Inscryption agora mesmo</h6>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#informacoes">
+                        <h4>Personagens principais</h4>
+                    </button>
+                </h2>
+                <div id="informacoes" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                       <h4>Leshy</h4>
+                       <p>Leshy é o personagem central do primeiro ato de Inscryption e, ao mesmo tempo, um dos escribas que controlam diferentes aspectos do universo do jogo. Ele governa a floresta, um espaço sombrio e ritualístico, onde conduz partidas de cartas em um ambiente que mistura tensão, teatro e sacrifício. Seu visual é o de um caçador florestal recluso, com olhos brilhantes escondidos por uma máscara feita de madeira e chifres de cervo. A estética do lugar que ele domina é escuro, rústico, com velas, caveiras e tábuas velhas — reflete diretamente sua personalidade e filosofia, que giram em torno da natureza bruta, do ciclo da vida selvagem e da caça.</p>
+                       <h4>P03</h4>
+                       <p>P03 é o escriba das máquinas em Inscryption e representa tudo o que é frio, calculado e mecânico dentro do universo do jogo. Diferente do estilo ritualístico e sombrio de Leshy, P03 surge como uma inteligência artificial obcecada por lógica, eficiência e ascensão digital. Sua primeira aparição é sutil, como uma carta viva no ato inicial, mas é no terceiro ato que ele assume o protagonismo com força total. Ao tomar o controle da narrativa, P03 literalmente reprograma o jogo.</p>
+                       <h4>Grimora</h4>
+                       <p>Grimora é a escriba da morte em Inscryption, e seu domínio é envolto em decadência, silêncio e um respeito quase poético pelo fim das coisas. Enquanto Leshy representa a natureza e P03 a máquina, Grimora simboliza o poder da mortalidade — não apenas como fim biológico, mas como parte essencial da existência. Ela aparece com mais destaque no segundo ato, quando os quatro escribas disputam entre si pelo controle do jogo, e seu reino é um cemitério melancólico, repleto de tumbas, ossos e poesia macabra. Sua estética remete a um gótico delicado: decadente, sim, mas também contemplativa, como uma carta escrita à mão sobre a inevitabilidade da morte.</p>
+                       <h4>Magnificus</h4>
+                       <p>Magnificus é o escriba da magia em Inscryption e talvez o mais enigmático dos quatro. Enquanto Leshy representa o instinto selvagem, P03 a frieza da máquina e Grimora a serenidade da morte, Magnificus simboliza o domínio da mente e da ilusão — uma figura excêntrica que vê a magia como um poder absoluto, superior a todas as outras formas de existência. Seu reino, apresentado com mais destaque no segundo ato, é uma torre surreal que desafia lógica e realidade, onde os alunos aprendem feitiços e enfrentam provas bizarras. Tudo ali parece estar flutuando entre o belo e o perturbador, entre a arte e o controle absoluto de seu mestre.</p>
+                       <h4>Luke Carder</h4>
+                       <p>Luke Carder é, em muitos sentidos, o coração secreto de Inscryption. Enquanto os escribas governam os mundos internos do jogo como figuras mitológicas, Luke representa a conexão direta com o nosso mundo — o mundo real. Ele é um youtuber e colecionador de cartas, um cara comum, curioso e excêntrico, que se vê tragado para dentro de um pesadelo digital quando encontra um disquete misterioso com o jogo Inscryption. Ao contrário dos escribas, Luke não é uma entidade poderosa ou uma figura simbólica; ele é humano, falho, mas também determinado. E é através dele que o jogador descobre que o jogo é muito mais do que parece: um artefato corrompido, proibido, cheio de segredos enterrados e memórias ocultas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="custom-footer bg-dark text-white mt-3">
+        <div class="container text-center py-4">
+            <p class="mb-0">2025 NEBULA &copy; Todos os direitos reservados.</p>
+            <p class="mb-0">
+                Desenvolvido por
+                <a style="color: blue; pointer-events: none;">Vinicius e Caio</a>
+            </p>
+            <div>
+                <a href="#inicio" class="button btn btn-outline-secondary mt-3">Início</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
