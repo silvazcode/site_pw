@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FNAF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/control.png" type="image/x-icon">
+</head>
+<body class="jogos">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container" id="inicio">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_nova.png" alt="Logo" height="120" style="max-width: 320px; width: auto" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <img src="img/menu_colorido.png" alt="menu colorido" />
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="navegacao.html">Navegação</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-4" role="search">
+                    <input class="form-control me-2 bg-dark text-white border-0" type="search" placeholder="nome do jogo..." aria-label="Pesquisar" />
+                    <button class="btn btn-pink" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="d-none d-lg-block ms-3">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px; cursor: pointer" />
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="search-bar d-flex align-items-center mb-3" role="search">
+                <input class="form-control" type="text" placeholder="nome do jogo..." />
+                <button class="btn text-white" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="navegacao.html">Navegação</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">
+                        Mais
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="streamers.html">Streamers</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr class="text-secondary" />
+            <div class="change-theme" id="change-theme-offcanvas">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px" />
+            </div>
+        </div>
+    </div>
+    <div class="jogos-conteudo-destaque">
+        <div class="jogos-container-flex">
+            <div class="jogos-left-col">
+                <div class="jogos-trailer mb-4">
+                    <iframe width="700" height="394" src="https://www.youtube.com/watch?v=68bZ1LKKh7Q"  
+                        title="Subnautica - Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div id="jogosCarousel" class="carousel slide jogos-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner jogos-carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="" alt="Dying light 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="Dying light 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="Dying light 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="Dying light 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="Dying light  5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev jogos-carousel-control-prev" type="button" data-bs-target="#jogosCarousel" data-bs-slide="prev">
+                        <span class="visually-hidden">Anterior</span>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-control-next jogos-carousel-control-next" type="button" data-bs-target="#jogosCarousel" data-bs-slide="next">
+                        <span class="visually-hidden">Próximo</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="jogos-side-info ms-lg-5">
+                <div class="jogos-game-title">Five nights at Freddy's</div>
+                <div class="jogos-rating"> </div>
+                <ul class="jogos-info-list">
+                    <li><span class="jogos-info-label">Gênero:</span> </li>
+                    <li><span class="jogos-info-label">Desenvolvedor:</span> </li>
+                    <li><span class="jogos-info-label">Lançamento:</span> </li>
+                    <li><span class="jogos-info-label">Plataformas:</span> </li>
+                    <li><span class="jogos-info-label">Classificação:</span> </li>
+                </ul>
+                <div class="jogos-preco-link mt-4">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: #e83e8c;">
+                        R$ 10,89
+                    </div>
+                    <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/" target="_blank" 
+                        class="btn btn-pink mt-2" style="font-weight: bold;">
+                        Ver na Steam <i class="fab fa-steam"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="jogos-description">
+            <p>Five Nights at Freddy’s, lançado em 2014 por Scott Cawthon, é o início de uma das franquias de terror mais icônicas e inesperadamente complexas dos games. À primeira vista, o jogo parece simples: você é um vigia noturno recém-contratado para cuidar da Freddy Fazbear’s Pizza, uma pizzaria infantil cheia de animatrônicos sorridentes e câmeras de segurança. Mas quando a noite cai, esses bonecos se tornam tudo, menos amigáveis. A partir da porta do seu minúsculo escritório, com energia limitada e uma tensão crescente, você precisa sobreviver a cinco noites — sem sair do lugar, sem armas, apenas com os olhos bem abertos.</p>
+            <p>Scott Cawthon concebeu a ideia de Five Nights at Freddy's depois de receber críticas de seu jogo anterior, Chipper & Sons Lumber Co., um jogo direcionado ao público infantil, por conta de seus personagens involuntariamente assustadores que consistiam em movimentos que se assemelhavam a animatrônicos. Desenvolvido durante seis meses com o uso do motor de jogo Clickteam Fusion 2.5, Five Nights at Freddy's foi lançado para Microsoft Windows em agosto de 2014 no Desura e Steam.Foi posteriormente lançado para Android, iOS e Windows Phone em 2014, e para Nintendo Switch, PlayStation 4 e Xbox One em 2019.</p>
+        </div>
+        <div class="accordion mt-3" id="accordionJogo">
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#descricao" aria-expanded="true">
+                        <h4>Jogabilidade</h4>
+                    </button>
+                </h2>
+                <div id="descricao" class="accordion-collapse collapse show" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        <p>Five Night at Freddy's é um jogo eletrônico de survival horror com elementos de point-and-click. O jogador atua como segurança noturno de uma pizzaria fictícia, e deve completar seu turno que dura de meia-noite até às seis da manhã (8 minutos e 36 segundos) sem ser assustado pelos quatro personagens animatrônicos que habitam a instalação.</p>
+                        <p>O jogador, sozinho em um escritório, tem acesso a uma rede de câmeras de segurança que fornecem vistas de várias partes do restaurante. Essas câmeras são usadas para rastrear os movimentos dos animatrônicos durante a noite. Cada personagem animatrônico possui padrões de movimentos distintos, e a maior parte desses movimentos ocorre fora da tela. A rede de câmeras é pouco iluminada e composta por ruídos, e uma câmera de segurança, localizada na cozinha, fornece apenas uma escuta de áudio. As câmeras não cobrem certas áreas do edifício, principalmente os dois corredores diretamente à esquerda e à direita do jogador, que exigem verificação por luzes que o jogador pode controlar clicando em um botão localizado ao lado de cada porta em seu escritório. O jogador não pode sair do escritório e deve fechar as portas do mesmo para autodefesa, o que também pode ser feito clicando nos botões adjacentes a cada porta.</p>
+                        <p>O uso dessas mecânicas (câmeras, luzes e portas) consome energia elétrica limitada do jogador; se toda energia acabar, as câmeras ficam inoperantes, as portas abrem e as luzes se apagam. O principal animatrônico do restaurante, Freddy Fazbear, aparecerá posteriormente na porta esquerda com luzes piscando em seus olhos, enquanto uma versão em caixa de música da canção "Toreador March" toca. Após um período de tempo aleatório, o escritório ficará escuro e Freddy dará um jumpscare no jogador, resultando no final do jogo, a menos que o jogador chegue às 6 da manhã antes que isso ocorra. Se o jogador sofrer um jumpscare por qualquer um dos animatrônicos, deverá reiniciar desde o início da noite.</p>
+                        <p>Five Nights at Freddy's possui cinco níveis que compreendem cinco "noites" no jogo, cada um aumentando em dificuldade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mecanicas">
+                        <p>Enredo</p>
+                    </button>
+                </h2>
+                <div id="mecanicas" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        <p>Os jogadores controlam Mike Schmidt, que se escreveu como um guarda de segurança noturno em um restaurante de pizzaria familiar chamada "Freddy Fazbear's Pizza". Uma mensagem de correio de voz do predecessor de Mike, que os jogadores chamam de "Phone Guy" (Cara do Telefone), toca todas as noites, nas quais Phone Guy conta a Mike sobre diferentes aspectos da história do restaurante, bem como dá dicas sobre a jogabilidade e sobrevivência. Phone Guy explica que os quatro personagens animatrônicos do restaurante — Freddy Fazbear, Bonnie, Chica e Foxy — tornam-se móveis à noite porque seus servomotores travam se ficarem desligados por muito tempo. O funcionário avisa a Mike que, se um dos animatrônicos encontrar um humano depois do expediente, ele os confundirá com um endoesqueleto animatrônico sem fantasia e os "colocará à força" em uma fantasia mecânica de Freddy Fazbear sobressalente, matando a pessoa no processo.</p>
+                        <p>A mensagem de voz menciona "A Mordida de 87", um incidente que supostamente causou a perda do lobo frontal de uma pessoa e forçou a proibição da mobilidade diurna dos animatrônicos. Recortes de jornais no canto leste do corredor do restaurante revelam relatos de assassinatos que ocorreram no local, onde um homem atraiu cinco crianças para um quarto dos fundos, depois as matou. De acordo com os recortes, a polícia acredita que o homem usava um traje de mascote para ganhar a confiança das crianças. O suspeito foi indiciado e condenado. Mais tarde, o restaurante recebeu reclamações de que os animatrônicos começaram a emitir odores desagradáveis ​​enquanto sangue e muco vazavam de seus olhos e bocas, com um cliente comparando-os a "carcaças reanimadas", implicando que os cadáveres das crianças foram colocados dentro dos animatrônicos. Isso se compara ao que o Phone Guy diz na Noite 1; “Se você fosse enfiado nos trajes, a única parte de você que provavelmente veria a luz do dia seriam seus olhos e boca, quando eles saírem da máscara”.</p>
+                        <p>Após a quarta noite, Mike não recebe mais mensagens de voz de Phone Guy, que está implícito por ter sido morto por um dos animatrônicos enquanto gravava a quarta mensagem. Uma mensagem de voz ainda toca na quinta noite, mas consiste apenas em um som distorcido. Ao completar a quinta e sexta noites, Mike recebe o pagamento, mas ele é demitido assim que a sétima "noite customizada" é concluída.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#informacoes">
+                        <p>Personagens príncipais</p>
+                    </button>
+                </h2>
+                <div id="informacoes" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        <h4>Freddy Fazbear</h4>
+                        <p>Freddy Fazbear é o rosto da pizzaria, o animatrônico principal e o símbolo da franquia. Durante o dia, ele seria apenas um cantor animado no palco, entretendo crianças com seu microfone e sorriso congelado. Mas à noite, seu comportamento muda completamente: ele se torna o mais imprevisível e silencioso dos animatrônicos. Freddy raramente age nos primeiros dias de vigia, mas sua movimentação se intensifica com o tempo, e quando finalmente entra em ação, é metódico e sorrateiro, avançando pelas câmeras com calma ameaçadora. Seu olhar brilhante no escuro é um presságio de que a noite está perto do fim — e possivelmente da sua última chance de sobreviver. Apesar de ser o "protagonista" da pizzaria, Freddy representa o silêncio da morte no jogo: ele não corre, não grita, apenas observa… e termina o serviço.</p>
+                        <h4>Bonnie the Bunny</h4>
+                        <p>Bonnie the Bunny é muitas vezes o primeiro animatrônico a se mover e o mais persistente ao tentar alcançar a sala de segurança. Com sua aparência de coelho roxo e um violão nas mãos, ele é um símbolo inocente à primeira vista — mas à noite, essa imagem é distorcida por seu comportamento agressivo e errático. Bonnie se aproxima sempre pelo lado esquerdo, espreitando pelos corredores e encarando as câmeras de segurança com olhos vazios e penetrantes. Seu rosto despido do traje frontal em certos momentos revela algo mais sinistro por trás da fantasia, alimentando a sensação de que há algo terrivelmente errado com ele. De todos os animatrônicos, Bonnie é frequentemente considerado o mais inquietante pela frequência com que aparece e pela forma direta com que testa os nervos do jogador.</p>
+                        <h4>Chica the Chicken</h4>
+                        <p>Chica the Chicken é o animatrônico que normalmente se aproxima pelo lado direito da pizzaria, portando um visual desconcertante com seu babador “Let’s Eat!” e olhos fixos que parecem atravessar as câmeras. Durante o dia, Chica representaria a doçura e o convite à diversão, mas à noite, ela é uma ameaça em passos lentos e implacáveis. Seu rosto desmontado e sua mandíbula desarticulada em certas cenas causam um desconforto visual que colabora para o clima opressor do jogo. Chica é imprevisível em seus ataques e aparece em momentos onde a distração é fatal, tornando-se uma das maiores fontes de susto para os jogadores. Ela também reforça a ideia de que esses robôs não estão apenas com defeito — há algo mais obscuro os movendo, algo que lembra o olhar vazio de uma alma perdida.</p>
+                        <h4>Foxy the Pirate</h4>
+                        <p>Foxy the Pirate é um dos animatrônicos mais marcantes da série por sua mecânica única e imprevisível. Diferente dos outros, Foxy não segue uma rota tradicional — ele permanece escondido atrás da cortina da Pirate Cove, espiando timidamente antes de correr em disparada pelo corredor oeste. Seu visual já é mais degradado do que os outros: com partes expostas, gancho no braço e um olhar de alerta constante, ele transmite a ideia de que algo o danificou profundamente, mas não o impediu de continuar. O jogador precisa monitorá-lo frequentemente, pois ignorar a Pirate Cove por muito tempo faz com que ele ataque sem aviso, correndo diretamente até a porta do escritório. Foxy quebra as regras do jogo tradicional, adicionando uma camada extra de pressão e estratégia. Ele é o caos controlado — o risco que aumenta quando você pensa que já entendeu tudo.</p>
+                        <h4>Golden Freddy</h4>
+                        <p>Golden Freddy é a manifestação mais enigmática de FNaF 1, uma figura que não se move como os outros e que aparece de forma quase sobrenatural. Ao surgir, ele não caminha pelos corredores nem se revela em etapas — ele simplesmente “existe” dentro da sala, como uma presença maldita que não deveria estar ali. Seu corpo inerte, jogado no chão como uma carcaça esquecida, e seu rosto fantasmagórico surgem sem padrão definido, causando travamentos e alucinações que fogem à lógica do jogo. Golden Freddy representa o colapso da realidade dentro da pizzaria, uma entidade que desafia o controle e quebra a imersão tradicional das câmeras. Ele é o maior símbolo do mistério por trás do universo de Five Nights at Freddy’s, deixando claro que o verdadeiro terror do jogo não está só nos sustos — mas no que ainda não foi explicado.</p>
+                        <h4>Mike Schmidt</h4>
+                        <p>Mike Schmidt é o protagonista silencioso e indefeso de Five Nights at Freddy’s 1. Funcionando como vigia noturno recém-contratado pela Freddy Fazbear’s Pizza, ele é colocado diante de um pesadelo que se esconde sob o véu de uma pizzaria infantil. Sem voz, sem rosto, Mike é a ponte direta entre o jogador e o terror do jogo, enfrentando sozinho cinco noites cercado por animatrônicos possuídos, com apenas portas, luzes e câmeras limitadas como defesa. Sua presença é passiva, mas essencial — é através de seus olhos que sentimos a tensão, a claustrofobia e o medo constante do desconhecido. Mike não tem armas, nem força, nem fuga: sua única chance é resistir ao tempo, controlando o medo com lógica e frieza. E, mesmo após tudo isso, ele é dispensado com um bilhete sarcástico no final — como se tudo que sobreviveu fosse apenas parte de uma rotina descartável, num lugar onde a vida humana parece valer tão pouco quanto os circuitos de um animatrônico quebrado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="custom-footer bg-dark text-white mt-3">
+        <div class="container text-center py-4">
+            <p class="mb-0">2025 NEBULA &copy; Todos os direitos reservados.</p>
+            <p class="mb-0">
+                Desenvolvido por
+                <a style="color: blue; pointer-events: none;">Vinicius e Caio</a>
+            </p>
+            <div>
+                <a href="#inicio" class="button btn btn-outline-secondary mt-3">Início</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/control.png" type="image/x-icon">
+</head>
+<body class="jogos">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container" id="inicio">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_nova.png" alt="Logo" height="120" style="max-width: 320px; width: auto" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <img src="img/menu_colorido.png" alt="menu colorido" />
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="navegacao.html">Navegação</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-4" role="search">
+                    <input class="form-control me-2 bg-dark text-white border-0" type="search" placeholder="nome do jogo..." aria-label="Pesquisar" />
+                    <button class="btn btn-pink" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="d-none d-lg-block ms-3">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px; cursor: pointer" />
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="search-bar d-flex align-items-center mb-3" role="search">
+                <input class="form-control" type="text" placeholder="nome do jogo..." />
+                <button class="btn text-white" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="navegacao.html">Navegação</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">
+                        Mais
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="streamers.html">Streamers</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr class="text-secondary" />
+            <div class="change-theme" id="change-theme-offcanvas">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px" />
+            </div>
+        </div>
+    </div>
+    <div class="jogos-conteudo-destaque">
+        <div class="jogos-container-flex">
+            <div class="jogos-left-col">
+                <div class="jogos-trailer mb-4">
+                    <iframe width="700" height="394" src="https://www.youtube.com/watch?v=ezPI0rPKwtE"  
+                        title="Subnautica - Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div id="jogosCarousel" class="carousel slide jogos-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner jogos-carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/img jogos/Uncharted 4/uncharted 4.jpg" alt="Red dead 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="Red dead 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="Red dead 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="Red dead 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="Red dead 5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev jogos-carousel-control-prev" type="button" data-bs-target="#jogosCarousel" data-bs-slide="prev">
+                        <span class="visually-hidden">Anterior</span>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-control-next jogos-carousel-control-next" type="button" data-bs-target="#jogosCarousel" data-bs-slide="next">
+                        <span class="visually-hidden">Próximo</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="jogos-side-info ms-lg-5">
+                <div class="jogos-game-title">Minecraft</div>
+                <div class="jogos-rating"> </div>
+                <ul class="jogos-info-list">
+                    <li><span class="jogos-info-label">Gênero:</span> </li>
+                    <li><span class="jogos-info-label">Desenvolvedor:</span> </li>
+                    <li><span class="jogos-info-label">Lançamento:</span> </li>
+                    <li><span class="jogos-info-label">Plataformas:</span> </li>
+                    <li><span class="jogos-info-label">Classificação:</span> </li>
+                </ul>
+                <div class="jogos-preco-link mt-4">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: #e83e8c;">
+                        R$ 194,74
+                    </div>
+                    <a href="https://www.minecraft.net/pt-pt/store/minecraft-java-bedrock-edition-pc?tabs=%7B%22details%22%3A0%7D" target="_blank" 
+                        class="btn btn-pink mt-2" style="font-weight: bold;">
+                        Ver na Microsoft Store(mudar) <i class="fab fa-microsoft"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="jogos-description">
+            <p>Minecraft é um jogo sandbox de 2011 desenvolvido e publicado pela desenvolvedora sueca de videogames Mojang Studios . Originalmente criado por Markus "Notch" Persson usando a linguagem de programação Java , a primeira versão alfa pública foi lançada em 17 de maio de 2009. O jogo foi continuamente desenvolvido a partir de então, recebendo um lançamento completo em 18 de novembro de 2011. Posteriormente, Persson deixou a Mojang e cedeu o controle do desenvolvimento a Jens "Jeb" Bergensten . Nos anos desde seu lançamento, o jogo foi portado para diversas plataformas, incluindo smartphones, tablets e vários consoles de videogame . Em 2014, a Mojang e a propriedade intelectual do Minecraft foram compradas pela Microsoft por US$ 2,5 bilhões.</p>
+            <p>No Minecraft , os jogadores exploram um mundo tridimensional gerado proceduralmente com terreno virtualmente infinito composto de voxels . Os jogadores podem descobrir e extrair matérias-primas, criar ferramentas e itens e construir estruturas, terraplenagens e máquinas. Dependendo do modo de jogo escolhido , os jogadores podem lutar contra mobs hostis , bem como cooperar ou competir contra outros jogadores no modo multijogador . O jogo tem dois modos principais: modo Sobrevivência, onde os jogadores devem adquirir recursos para sobreviver, e modo Criativo, onde os jogadores têm recursos ilimitados e a capacidade de voar. O jogo pode ser ainda mais interagido por meio do modo Hardcore, uma variante de morte permanente do Survival, bem como mapas para download feitos pelo jogador ou desafios autoimpostos. A grande comunidade do jogo oferece uma grande variedade de conteúdo gerado pelo usuário , como modificações , servidores , skins de jogador , pacotes de textura e mapas personalizados, que adicionam novas mecânicas e possibilidades de jogo. Speedrunning é outra atividade popular da comunidade.</p>
+        </div>
+        <div class="accordion mt-3" id="accordionJogo">
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#descricao" aria-expanded="true">
+                        <h4>Jogabilidade</h4>
+                    </button>
+                </h2>
+                <div id="descricao" class="accordion-collapse collapse show" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        <p>Minecraft é um jogo eletrônico dos gêneros sandbox e sobrevivência que não possui objetivos específicos a serem alcançados, permitindo aos jogadores uma grande liberdade de escolha de como jogá-lo. No entanto, existe um sistema de conquistas, conhecido como "progressos" na edição Java. A jogabilidade é apresentada numa perspectiva em primeira pessoa por padrão, mas os jogadores têm a opção de selecionarem uma visão em terceira pessoa. O mundo aberto de Minecraft é composto de objetos tridimensionais brutos — principalmente cubos e fluidos, sendo comumente chamados de "blocos" — representando vários materiais, como pedra, minérios, troncos de árvores, água e lava. A jogabilidade principal gira em torno de pegar e colocar esses objetos, que são organizados em uma grade tridimensional, enquanto os jogadores podem se mover livremente pelo mundo. Os jogadores podem "extrair" blocos e depois colocá-los em outro lugar, permitindo que eles construam coisas distintas. Muitos analistas descreveram o sistema de física de Minecraft como irrealista; líquidos fluem continuamente por uma distância horizontal limitada dos blocos de origem, que podem ser removidos colocando um bloco sólido em seu lugar ou colocando-o em um balde. Minecraft também contém um material conhecido como redstone, que pode ser usado para fabricar dispositivos mecânicos primitivos e circuitos elétricos, permitindo a construção de muitos sistemas complexos</p>
+                        <p>O mundo de Minecraft é virtualmente quase infinito e gerado proceduralmente à medida que os jogadores o exploram, usando um mapa ou uma bússola no momento da criação do mundo (ou manualmente conquistado pelo jogador). Existem limites para o movimento vertical, mas Minecraft permite que um enorme mundo seja gerado no plano horizontal. Devido a problemas técnicos quando locais extremamente distantes são alcançados, no entanto, existe uma barreira que impede os jogadores de atravessar para locais além de 30 milhões de blocos a partir do centro do mundo, conhecida como Far Lands. O jogo consegue fazer isso dividindo os dados do mundo em seções menores, que são criadas ou carregadas apenas quando os jogadores estão por perto. O mundo é dividido em biomas que variam de desertos a selvas e campos de neve; alguns terrenos incluem planícies, montanhas, florestas, cavernas e vários corpos de lava e água. O sistema de tempo no jogo segue um ciclo dia e noite, e um ciclo completo dura vinte minutos em tempo real.</p>
+                        <p>Minecraft tem duas dimensões alternativas além do mundo superior (o mundo principal): o Nether e o Fim. O Nether é uma dimensão infernal acessada através de portais criados por jogadores; contém muitos recursos únicos e pode ser usado para percorrer grandes distâncias no mundo superior, porque cada bloco viajado no Nether é equivalente a 8 blocos viajados no mundo superior. O jogador pode construir uma multidão de chefes opcionais, a partir dos materiais encontrados no Nether. O Fim é uma terra árida que consiste em muitas ilhas. Um dragão chefe chamado Ender Dragon mora na ilha principal. Matar o dragão indica os créditos finais do jogo e um poema escrito pelo romancista irlandês Julian Gough. Os jogadores podem teleportar de volta ao seu ponto de desova original no mundo superior e continuar o jogo indefinidamente.</p>
+                        <p>Minecraft consiste em cinco modos de jogo: sobrevivência, criativo, aventura, hardcore e espectador. Ele também tem um sistema de dificuldade variável de quatro níveis.</p>
+                        <h6>Sobrevivência</h6>
+                        <p>No modo sobrevivência, os jogadores precisam reunir recursos naturais, como madeira e pedra encontrados no ambiente, para criar certos blocos e itens. Dependendo da dificuldade, criaturas hostis aparecem em áreas mais escuras fora de um determinado raio do personagem, exigindo que os jogadores construam um abrigo à noite. O modo também possui uma barra de vida que é esgotada por ataques de monstros, quedas, afogamentos, queda em lava, asfixiamento, fome e outros eventos. Os jogadores também têm uma barra de fome, que deve ser recarregada periodicamente pela ingestão de alimentos no jogo, exceto em dificuldades pacíficas. Se a barra de fome estiver esgotada, a cura automática será interrompida e, eventualmente, a saúde se esgotará. A saúde reabastece quando os jogadores têm uma barra de fome quase cheia ou continuamente em dificuldade pacífica.</p>
+                        <p>Os jogadores podem criar uma grande variedade de itens em Minecraft para atenderem as suas necessidades de sobrevivência. Os itens fabricáveis ​​incluem armaduras, que mitigam os danos dos ataques; armas (como espadas), que permitem que monstros e animais sejam mortos com mais facilidade; e ferramentas, que quebram certos tipos de blocos mais rapidamente. Alguns itens têm várias camadas, dependendo do material usado para fabricá-los, com itens de camada superior sendo mais eficazes e duráveis. Os jogadores podem construir fornos, que podem cozinhar alimentos, processar minérios e converter materiais em outros materiais. Os jogadores também podem trocar mercadorias com aldeões através de um sistema de troca, que envolve a troca de esmeraldas por diferentes mercadorias e vice-versa.</p>
+                        <p>O jogo possui um sistema de inventário, permitindo que os jogadores carreguem um número limitado de itens. Ao morrer, os itens no inventário são descartados e os jogadores reaparecem no ponto de desova, que por padrão é o local onde os jogadores aparecem no jogo pela primeira vez e podem ser redefinidos dormindo na cama. Os itens descartados podem ser recuperados se os jogadores puderem alcançá-los antes que eles desapareçam após 5 minutos. Os jogadores podem adquirir pontos de experiência matando monstros e outros jogadores, minerando, fundindo minérios, criando animais e cozinhando alimentos. Pontos de experiência podem ser gastos em ferramentas, armaduras e armas encantadas. Itens encantados geralmente são mais poderosos, duram mais ou têm outros efeitos especiais.</p>
+                        <h6>Criativo</h6>
+                        <p>No modo criativo, os jogadores têm acesso a todos os recursos e itens do jogo através do menu inventário e podem colocá-los ou removê-los instantaneamente. Os jogadores podem alternar a capacidade de voar livremente pelo mundo do jogo à vontade, e seus personagens não sofrem nenhum dano e não são afetados pela fome. Esse modo de jogo ajuda os jogadores a se concentrarem na construção e criação de projetos de qualquer tamanho, sem perturbações.</p>
+                        <h6>Aventura</h6>
+                        <p>O modo aventura foi projetado especificamente para que os jogadores pudessem experimentar mapas personalizados criados pelo usuário. A jogabilidade é semelhante ao modo sobrevivência, mas com várias restrições, que podem ser aplicadas ao mundo do jogo pelo criador do mapa. Isso força os jogadores a obter os itens necessários e experimentar aventuras da maneira que o cartógrafo pretender. Outra adição projetada para mapas personalizados é o bloco de comando; esse bloco permite que os cartógrafos expandam as interações com os jogadores por meio de comandos de servidor com script</p>
+                        <h6>Espectador</h6>
+                        <p>O modo espectador permite aos jogadores voarem através de blocos e assistir ao jogo sem interagir diretamente. Os jogadores não têm um inventário, mas podem se teletransportar para outros jogadores e visualizar da perspectiva do mesmo ou de uma criatura.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mecanicas">
+                        <h4>Enredo</h4>
+                    </button>
+                </h2>
+                <div id="mecanicas" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                        <p>A história de Minecraft é envolta em mistério, teorias e pequenos fragmentos escondidos no jogo — porque oficialmente, Minecraft não tem uma narrativa contada diretamente. Mas ao longo dos anos, o universo do jogo foi se formando com base em pistas espalhadas no mundo, especialmente com a adição de estruturas, mobs e dimensões como o Nether e o End. Abaixo, você verá a história mais aceita pela comunidade, com base no que o jogo sugere e no que os jogadores construíram ao longo do tempo.</p>
+                        <p>Muito antes de o jogador chegar ao mundo de Minecraft, existia uma civilização avançada. As ruínas de seus feitos ainda podem ser encontradas hoje em templos, fortalezas, cidades antigas (Ancient Cities), mineshafts e, principalmente, as Strongholds (Fortalezas do End). Eles dominavam a arquitetura, a mineração, a redstone e até o teletransporte interdimensional.</p>
+                        <p>A civilização, ao tentar dominar o End, acabou encontrando algo muito mais poderoso do que eles imaginavam: o Ender Dragon. Essa criatura se tornou a guardiã do End e destruiu (ou expulsou) os exploradores humanos, deixando a dimensão tomada pelas criaturas que conhecemos hoje: Endermen, corais mortos e as cidades do End vazias.</p>
+                        <p>Outros exploradores tentaram dominar o Nether, uma dimensão hostil cheia de lava, demônios e almas perdidas. Eles construíram fortalezas e bastiões, mas falharam em domar o caos. Criaturas como os Piglins, Wither Skeletons e o próprio Wither surgiram como produtos dessa tentativa de domínio. A dimensão acabou corrompida, incontrolável, e cheia de mortos-vivos.</p>
+                        <p>O personagem controlado por você (conhecido como Steve ou Alex) parece ser o último vestígio daquela antiga civilização ou talvez um novo explorador de um mundo pós-catástrofe. Ao acordar sem memórias, o jogador reconstrói tudo do zero, enfrentando o ciclo natural da vida, dominando a terra, minerando, encantando e explorando ruínas de um mundo que já foi habitado.</p>
+                        <h6>Minecraft apesar de não ter uma história fixa, ainda te prende com seus amigos nesta experiência incrível. Experimente comprá=lo</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#informacoes">
+                        <h4>Personagens principais</h4>
+                    </button>
+                </h2>
+                <div id="informacoes" class="accordion-collapse collapse" data-bs-parent="#accordionJogo">
+                    <div class="accordion-body" style="color: whitesmoke;">
+                       <h4>Steve</h4>
+                       <p>Steve é o símbolo da criação e da sobrevivência em Minecraft, o personagem que representa o jogador em sua forma mais pura. Com nada além das próprias mãos, ele cava, constrói, luta e explora um mundo infinito, moldando a realidade com blocos e criatividade sem limites.</p>
+                       <h4>Villager(Aldeão)</h4>
+                       <p>O Villager é o habitante pacífico das aldeias espalhadas por Minecraft, vivendo seu cotidiano entre plantações, bancadas e camas, muitas vezes ignorado ou protegido pelos jogadores. Com seus murmúrios e negociações, ele representa a civilização dentro de um mundo selvagem — uma figura que não empunha armas, mas domina o comércio, o conhecimento e a rotina silenciosa da vida entre blocos.</p>
+                       <h4>Creeper</h4>
+                       <p>O Creeper é o terror silencioso das madrugadas cúbicas — sem emitir som até explodir, ele se tornou o maior ícone do perigo repentino no jogo. Sua presença é marcada por destruição e sustos, e poucos mobs causam tanto respeito com tão pouco som.</p>
+                       <h4>Enderman</h4>
+                       <p>O Enderman é uma entidade alta, sombria e quase enigmática, que caminha entre dimensões e carrega blocos como se entendesse segredos que o jogador não sabe. Seus olhos roxos e seu ódio silencioso ao contato visual o tornam uma figura de respeito e mistério.</p>
+                       <h4>Ender Dragon</h4>
+                       <p>O Ender Dragon é o chefe supremo do jogo, a criatura que guarda o Fim e que representa a conclusão épica da jornada de um jogador. Com voos imponentes e ataques devastadores, ela desafia os mais preparados e simboliza o clímax da exploração e do combate.</p>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="custom-footer bg-dark text-white mt-3">
+        <div class="container text-center py-4">
+            <p class="mb-0">2025 NEBULA &copy; Todos os direitos reservados.</p>
+            <p class="mb-0">
+                Desenvolvido por
+                <a style="color: blue; pointer-events: none;">Vinicius e Caio</a>
+            </p>
+            <div>
+                <a href="#inicio" class="button btn btn-outline-secondary mt-3">Início</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
