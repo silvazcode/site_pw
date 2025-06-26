@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/control.png" type="image/x-icon" />
+    <title>Jogos de tiro</title>
+</head>
+<body>
+    <nav aria-label="breadcrumb" class="pt-4 pb-2">
+        <ol class="breadcrumb bg-dark rounded-3 px-4 py-2 mb-3 shadow-sm" style="max-width: 500px; margin: 0 auto;">
+        <li class="breadcrumb-item">
+            <a href="navegacao.html" class="text-pink">Navegação</a>
+        </li>
+        <li class="breadcrumb-item active text-white" aria-current="page">
+            <a href="acao.html" class="text-pink">Jogos de tiro</a>
+        </li>
+        </ol>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container" id="inicio">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_nova.png" alt="Logo" height="120" style="max-width: 320px; width: auto;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <img src="img/menu_colorido.png" alt="menu colorido" />
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="navegacao.html">Navegação</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mais</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-4" role="search">
+                    <input class="form-control me-2 bg-dark text-white border-0" type="search" placeholder="nome do jogo..." aria-label="Pesquisar" />
+                    <button class="btn btn-pink" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="d-none d-lg-block ms-3">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px; cursor: pointer;" />
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="search-bar d-flex align-items-center mb-3" role="search">
+                <input class="form-control" type="text" placeholder="nome do jogo..." />
+                <button class="btn text-white" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="navegacao.html">Navegação</a></li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">Mais</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
+                </ul>
+                </li>
+            </ul>
+            <hr class="text-secondary" />
+            <div class="change-theme" id="change-theme-offcanvas">
+                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px;" />
+            </div>
+        </div>
+    </div>
+    <h1 class="section-header" style="padding: 15px;">Principais jogos de ação</h1>
+    <div class="d-flex justify-content-center my-4">
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <a type="button" class="group btn btn-outline-secondary" href="navegacao.html">Todos</a>
+            <a type="button" class="group btn btn-outline-secondary" href="indie.html">Indie</a>
+            <a type="button" class="group btn btn-outline-secondary" href="acao.html">Ação</a>
+            <a type="button" class="group btn btn-outline-secondary" href="multiplayer.html">Multiplayer</a>
+        </div>
+    </div>
+        <div class="container d-flex flex-column gap-4 mb-5">
+        <!-- Cards de jogos -->
+            <a href="days_gone.html" class="text-decoration-none">
+                <div class="game-card">
+                    <img src="img/days_gone_capa.jpg" alt="Days Gone" class="game-thumb" />
+                    <div class="game-info">
+                        <h5>Days Gone</h5>
+                        <div>
+                            <span class="rating">★ 4.8</span>
+                            <span class="players">200MI jogadores</span>
+                        </div>
+                        <small class="text-muted">Bend Studio</small>
+                    </div>
+                </div>
+            </a>
+            <a href="dying_light_2.html" class="text-decoration-none">
+                <div class="game-card">
+                    <img src="img/dying_light_2_capa.jpeg" alt="Dying Light 2" class="game-thumb" />
+                    <div class="game-info">
+                        <h5>Dying Light 2</h5>
+                        <div>
+                            <span class="rating">★ PESQUISAR</span>
+                            <span class="players">PESQUISAR</span>
+                        </div>
+                        <small class="text-muted">Techland</small>
+                    </div>
+                </div>
+            </a>
+            <a href="red_dead_2.html" class="text-decoration-none">
+                <div class="game-card">
+                    <img src="img/red_dead_2_capa.png" alt="Red Dead Redemption 2" class="game-thumb" />
+                    <div class="game-info">
+                        <h5>Red Dead Redemption 2</h5>
+                        <div>
+                            <span class="rating">★ PESQUISAR</span>
+                            <span class="players">PESQUISAR</span>
+                        </div>
+                        <small class="text-muted">PESQUISAR</small>
+                    </div>
+                </div>
+            </a>
+            <a href="tlou_p_2.html" class="text-decoration-none">
+                <div class="game-card">
+                    <img src="img/tlou_2_capa.jpg" alt="The Last of Us" class="game-thumb" />
+                    <div class="game-info">
+                        <h5>The Last of Us: Parte 2</h5>
+                        <div>
+                            <span class="rating">★ PESQUISAR</span>
+                            <span class="players">PESQUISAR</span>
+                        </div>
+                        <small class="text-muted">PESQUISAR</small>
+                    </div>
+                </div>
+            </a>
+            <a href="uncharted_4.html" class="text-decoration-none">
+                <div class="game-card">
+                    <img src="img/uncharted_4_capa.jpg" alt="Uncharted 4" class="game-thumb" />
+                    <div class="game-info">
+                        <h5>Uncharted 4</h5>
+                        <div>
+                            <span class="rating">★ PESQUISAR</span>
+                            <span class="players">PESQUISAR</span>
+                        </div>
+                        <small class="text-muted">PESQUISAR</small>
+                    </div>
+                </div>
+            </a>
+            <a href="cod_warzone.html" class="text-decoration-none">
+                <div class="game-card">
+                    <img src="img/cod_capa.jpeg" alt="Call od Duty Warzone" class="game-thumb" />
+                    <div class="game-info">
+                        <h5>Call of Duty Warzone</h5>
+                        
+                        <div>
+                            <span class="rating">★ PESQUISAR</span>
+                            <span class="players">PESQUISAR</span>
+                        </div>
+                        <small class="text-muted">PESQUISAR</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer class="custom-footer bg-dark text-white">
+        <div class="container text-center py-4">
+            <p class="mb-0">2025 NEBULA &copy; Todos os direitos reservados.</p>
+            <p class="mb-0">Desenvolvido por <a style="color: blue; pointer-events: none;">Vinicius e Caio</a></p>
+            <div>
+                <a href="#inicio" class="button btn btn-outline-secondary mt-3">Início</a>
+            </div>
+        </div>
+    </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/own_script.js"></script>
+</body>
+</html>

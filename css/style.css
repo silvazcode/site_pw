@@ -148,6 +148,10 @@ body {
     font-weight: 900;
 }
 
+.card-index{
+    text-decoration: none !important;
+}
+
 .btn-pink {
     background: #e83e8c;
     color: #fff;
