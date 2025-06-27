@@ -28,17 +28,6 @@ body {
     background-color: transparent !important;
 }
 
-.change-theme {
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.change-theme img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-
 .form-control {
     background-color: #18191c !important;
     color: #fafafa !important;
@@ -109,19 +98,31 @@ body {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28), 0 4px 24px rgba(0,0,0,0.25);
 }
 
-.card-img-top {
+.card-do-index {
+    text-decoration: none !important;
+}
+
+.imagem-do-card {
     border-radius: 10%;
 }
 
-.card-title {
+.titulo-do-card {
     color: #fff;
 }
 
-.banner-container {
+.avaliacao-card {
+    color:#ffd700;
+}
+
+.downloads-card {
+    color:#e83e8c;
+}
+
+.banner-imagem {
     position: relative;
 }
 
-.banner-text {
+.texto-do-banner {
     position: absolute;
     top: 50%;
     left: 60px;
@@ -131,25 +132,20 @@ body {
     max-width: 500px;
 }
 
-.welcome-text {
-    font-size: 1.2rem;
+.bem-vindo-texto {
+    font-size: 20px;
     color: #fff;
     opacity: 0.85;
 }
 
 .banner-title {
-    font-size: 2.5rem;
+    font-size: 20px;
     font-weight: 900;
-    line-height: 1.1;
 }
 
-.text-highlight {
+.texto-contraste {
     color: #e83e8c;
     font-weight: 900;
-}
-
-.card-index{
-    text-decoration: none !important;
 }
 
 .btn-pink {
@@ -163,8 +159,7 @@ body {
 
 .btn-pink:hover {
     background-color: #fff !important;
-    color: #e83e8c !important;
-    border: none !important;
+    color: #e83e8c;
     transition: background 1s;
 }
 
@@ -206,17 +201,12 @@ nav {
     transition: background-color 0.3s;
 }
 
-@keyframes anim {
-  from { opacity: 1; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* Parte do css da navegação */
 
 .section-header {
     color: #fff;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 25px;
     font-weight: 800;
     margin-bottom: 2rem;
 }
@@ -268,7 +258,6 @@ nav {
 .game-thumb {
     width: 160px;
     height: 100px;
-    
     border-radius: 10px;
 }
 
@@ -278,7 +267,7 @@ nav {
 
 .game-info h5 {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-bottom: 0.5rem;
 }
 
@@ -299,24 +288,21 @@ nav {
     font-weight: 500;
     transition: color 0.3s, text-decoration 0.3s;
 }
+
 .breadcrumb a:hover {
     text-decoration: none !important;
     color: #fff !important;
 }
 
 /* css das paginas de jogos*/
-:root {
-    --rosa: #ff2e8b;
-    --preto: #18181c;
-    --cinza: #23232b;
-    --cinza-claro: #ccc;
-}
+
 .jogos-body {
     background: #000;
     color: #fff;
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
 }
+
 .jogos-conteudo-destaque {
     background: #212529;
     border-radius: 28px;
@@ -325,12 +311,14 @@ nav {
     padding: 60px 40px 40px 40px;
     box-shadow: 0 0 32px 0 #000a;
 }
+
 .jogos-container-flex {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
     align-items: center;
 }
+
 .jogos-carousel {
     flex: 2;
     min-width: 320px;
@@ -343,15 +331,18 @@ nav {
     max-height: 400px;
     object-fit: cover;
 }
+
 .jogos-carousel-control-prev, .tlou-carousel-control-next {
     width: 7%;
 }
+
 .jogos-carousel-control-prev .fa-chevron-left,
 .jogos-carousel-control-next .fa-chevron-right {
     color: #e83e8c;
     font-size: 2.8rem;
     text-shadow: 0 0 10px #000a;
 }
+
 .jogos-side-info {
     flex: 1;
     display: flex;
@@ -365,12 +356,14 @@ nav {
     height: fit-content;
     align-self: center;
 }
+
 .jogos-game-title {
-    font-size: 2rem;
+    font-size: 45px;
     font-weight: bold;
     color: #e83e8c;
     margin-bottom: 10px;
 }
+
 .jogos-rating {
     background: #2d2d36;
     border-radius: 8px;
@@ -381,24 +374,28 @@ nav {
     color: #e83e8c;
     font-weight: bold;
 }
+
 .jogos-info-list {
     list-style: none;
     padding: 0;
     margin: 0;
     font-size: 1.05rem;
 }
+
 .jogos-info-list li {
     margin-bottom: 8px;
     color: #fff;
 }
+
 .jogos-info-label {
     color: #e83e8c;
     font-weight: bold;
 }
+
 .jogos-description {
     max-width: 900px;
     margin: 40px auto 0 auto;
-    font-size: 1.1rem;
+    font-size: 30px;
     color: #fff;
     background-color: #2d2f36;
     padding: 24px;
@@ -406,34 +403,59 @@ nav {
 }
 
 .jogos-left-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 2;
-  min-width: 320px;
-  max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+    min-width: 320px;
+    max-width: 700px;
 }
+
 .jogos-trailer {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto 24px auto;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 24px auto;
 }
+
 .jogos-trailer iframe {
-  width: 100%;
-  height: 394px;
-  border-radius: 16px;
-  display: block;
-  box-shadow: 0 4px 16px #000;
+    width: 100%;
+    height: 394px;
+    border-radius: 16px;
+    display: block;
+    box-shadow: 0 4px 16px #000;
+}
+
+@media (max-width: 768px) {
 }
 
 @media (max-width: 900px) {
-    .tlou-trailer iframe {
-        width: 100%;
-        height: 220px;
+    .texto-contraste {
+        font-size: 23px;
+    }
+    .banner-title {
+       
+        font-size: 32px;
     }
 }
 
 @media (max-width: 576px) {
+    .texto-contraste {
+        text-align: center;
+        width: 100%;
+    }
+
+    .texto-do-banner {
+        text-align: center;
+    }
+
+    .bem-vindo-texto {
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 10px;
+    }
+
     .game-card {
         flex-direction: column;
         align-items: center;
@@ -449,7 +471,12 @@ nav {
         align-items: center;
     }
 }
+
 @media (max-width: 1100px) {
+    .texto-contraste {
+        width: 70%;
+    }
+
     .jogos-container-flex {
         flex-direction: column;
         gap: 20px;
@@ -504,13 +531,16 @@ nav {
 }
 
 /* Streamers cards customização */
+
 .streamer-card {
     background-color: #2d2f36;
     border: 2px solid #ff2e8b;
 }
+
 .streamer-card .card-title {
     color: #ff2e8b;
 }
+
 .streamer-card .card-img-top {
     border-radius: 50%;
     width: 220px;

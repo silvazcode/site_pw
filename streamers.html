@@ -11,13 +11,12 @@
 </head>
 <body class="tlou-body">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container">
+        <div class="container" id="inicio">
             <a class="navbar-brand" href="#">
-                <img src="img/logo_nova.png" alt="Logo" height="120" style="max-width:320px; width:auto;">
+                <img src="img/logo_nova.png" alt="Logo" height="120" style="max-width: 320px; width: auto;" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="img/menu_colorido.png" alt="menu colorido">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <img src="img/menu_colorido.png" alt="menu colorido" />
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav gap-3">
@@ -28,58 +27,47 @@
                         <a class="nav-link" href="navegacao.html">Navegação</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mais
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mais</a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex ms-4" role="search">
-                    <input class="form-control me-2 bg-dark text-white border-0" type="search" placeholder="nome do jogo..." aria-label="Pesquisar">
+                    <input class="form-control me-2 bg-dark text-white border-0" type="search" placeholder="nome do jogo..." aria-label="Pesquisar" />
                     <button class="btn btn-pink" type="submit">Buscar</button>
                 </form>
-            </div>
-            <div class="d-none d-lg-block ms-3">
-                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px; cursor: pointer;">
             </div>
         </div>
     </nav>
     <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header flex-column align-items-center">
-            <img src="img/logo_nova.png" alt="Logo" height="80" style="max-width:220px; width:auto; margin-bottom: 10px;">
-            <h5 class="offcanvas-title mt-2" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 m-3" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
         </div>
-        <div class="offcanvas-body pt-0">
-            <ul class="navbar-nav mb-3 px-3 pt-3">
-                <li class="nav-item"><a class="nav-link text-white" href="#">Início</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="navegacao.html">Navegação</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">Mais</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="search-bar d-flex align-items-center mb-3 px-3" role="search">
+        <div class="offcanvas-body">
+            <form class="search-bar d-flex align-items-center mb-3" role="search">
                 <input class="form-control" type="text" placeholder="nome do jogo..." />
                 <button class="btn text-white" type="submit">
                     <i class="fas fa-search"></i>
                 </button>
             </form>
-            <hr class="text-secondary">
-            <div class="change-theme px-3 pb-3" id="change-theme-offcanvas">
-                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px;">
-            </div>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="navegacao.html">Navegação</a></li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">Mais</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
+                </ul>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="container py-5">
         <h1 class="mb-4 text-center" style="color: #ff2e8b;">Streamers em Destaque</h1>
         <div class="row g-4">
-            <!-- Streamer Card 1 -->
+            <!-- Cards dos streamers -->
             <div class="col-md-4">
                 <div class="card streamer-card h-100 text-center">
                     <img src="img/alanzoka.jpg" class="card-img-top" alt="Alanzoka">
@@ -92,7 +80,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Streamer Card 2 -->
             <div class="col-md-4">
                 <div class=" card streamer-card h-100 text-center">
                     <img src="img/MrFall.jpg" class="card-img-top" alt="Mrfall">
@@ -105,7 +92,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Streamer Card 3 -->
             <div class="col-md-4">
                 <div class="card streamer-card text-center">
                     <img src="img//Mount.jpg" class="card-img-top" alt="Mount">
@@ -118,8 +104,43 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card streamer-card text-center">
+                    <img src="img/calango.jpg" class="card-img-top" alt="Calango">
+                    <div class="card-body">
+                        <h5 class="card-title">Calango</h5>
+                        <p class="card-text text-light"></p>
+                        <a href="https://www.twitch.tv/calango" target="_blank" class="btn btn-pink mt-2">
+                            <i class="fab fa-twitch"></i> Assistir na Twitch
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card streamer-card text-center">
+                    <img src="img/coringa.jpg" class="card-img-top" alt="Coringa">
+                    <div class="card-body">
+                        <h5 class="card-title">Coringa</h5>
+                        <p class="card-text text-light"></p>
+                        <a href="https://www.twitch.tv/loud_coringa" target="_blank" class="btn btn-pink mt-2">
+                            <i class="fab fa-twitch"></i> Assistir na Twitch
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card streamer-card text-center">
+                    <img src="img/Guinas.jpg" class="card-img-top" alt="Guinas">
+                    <div class="card-body">
+                        <h5 class="card-title">Guinas</h5>
+                        <p class="card-text text-light"></p>
+                        <a href="https://www.twitch.tv/guinas" target="_blank" class="btn btn-pink mt-2">
+                            <i class="fab fa-twitch"></i> Assistir na Twitch
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Adicione mais cards conforme necessário -->
     </div>
 
     <footer class ="custom-footer bg-dark text-white">

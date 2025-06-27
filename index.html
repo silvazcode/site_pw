@@ -12,67 +12,55 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container" id="inicio">
             <a class="navbar-brand" href="#">
-                <img src="img/logo_nova.png" alt="Logo" height="120" style="max-width:320px; width:auto;">
+                <img src="img/logo_nova.png" alt="Logo" height="120" style="max-width: 320px; width: auto;" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="img/menu_colorido.png" alt="menu colorido">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <img src="img/menu_colorido.png" alt="menu colorido" />
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav gap-3">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="navegacao.html">Navegação</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mais
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mais</a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex ms-4" role="search">
-                    <input class="form-control me-2 bg-dark text-white border-0" type="search" placeholder="nome do jogo..." aria-label="Pesquisar">
+                    <input class="form-control me-2 bg-dark text-white border-0" type="search" placeholder="nome do jogo..." aria-label="Pesquisar" />
                     <button class="btn btn-pink" type="submit">Buscar</button>
                 </form>
-            </div>
-            <div class="d-none d-lg-block ms-3">
-                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px; cursor: pointer;">
             </div>
         </div>
     </nav>
     <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header flex-column align-items-center">
-            <img src="img/logo_nova.png" alt="Logo" height="80" style="max-width:220px; width:auto; margin-bottom: 10px;">
-            <h5 class="offcanvas-title mt-2" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 m-3" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
         </div>
-        <div class="offcanvas-body pt-0">
-            <ul class="navbar-nav mb-3 px-3 pt-3">
-                <li class="nav-item"><a class="nav-link text-white" href="#">Início</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="navegacao.html">Navegação</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">Mais</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="search-bar d-flex align-items-center mb-3 px-3" role="search">
+        <div class="offcanvas-body">
+            <form class="search-bar d-flex align-items-center mb-3" role="search">
                 <input class="form-control" type="text" placeholder="nome do jogo..." />
                 <button class="btn text-white" type="submit">
                     <i class="fas fa-search"></i>
                 </button>
             </form>
-            <hr class="text-secondary">
-            <div class="change-theme px-3 pb-3" id="change-theme-offcanvas">
-                <img src="img/dia_noite.png" alt="mudar tema do site" style="width: 40px;">
-            </div>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="navegacao.html">Navegação</a></li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasDropdown" data-bs-toggle="dropdown">Mais</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="streamers.html">Streamers</a></li>
+                </ul>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="alert alert-pink alert-dismissible fade show mt-3 mx-auto alert-index" role="alert">
@@ -81,125 +69,139 @@
     </div>
     <main>
         <section class="custom-section mt-5 mb-3 px-4">
-            <div class="banner-container position-relative mb-4">
+            <div class="banner-imagem position-relative mb-4">
                 <img src="img/background_index.jpg" alt="Banner" class="img-fluid w-100 rounded-4">
-                <div class="banner-text position-absolute top-50 start-0 translate-middle-y ms-5">
-                    <p class="welcome-text mb-2">Bem vindo ao NEBULA</p>
+                <div class="texto-do-banner position-absolute top-50 start-0 translate-middle-y ms-5">
+                    <p class="bem-vindo-texto mb-2">Bem vindo ao NEBULA</p>
                     <h1 class="banner-title mb-3">
-                        <span class="text-highlight">Descubra</span> nossos mais populares<br>Jogos aqui
+                        <span class="texto-contraste">Descubra</span> nossos mais populares<br>Jogos aqui
                     </h1>
-                    <a href="#" class="btn btn-pink px-4 py-2 fw-bold rounded-pill">Navegar</a>
+                    <a href="navegacao.html" class="btn btn-pink px-4 py-2 fw-bold rounded-pill">Navegar</a>
                 </div>
             </div>
             <div class="row g-4">
-                
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="card h-100">
-                                <img src="img/fnaf_capa.jpg" class="card-img-top" alt="Imagem do jogo eletrônico Fortnite">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-1; card-index;">Five Nights At Freddy’s</h5>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span style="color:#ffd700;">★ 4.8</span>
-                                        <span style="color:#e83e8c;">50MI</span>
-                                    </div>
-                                    <small class="text-muted">Scott Cowthon</small>
-                                    <span class=" badge-novo badge">Novo!</span>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="fnaf.html" class="card-do-index">
+                        <div class="card h-100">
+                            <img src="img/fnaf_capa.jpg" class="imagem-do-card" alt="Imagem do jogo eletrônico Fortnite">
+                            <div class="card-body">
+                                <h5 class="titulo-do-card mb-1">Five Nights At Freddy’s</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="avaliacao-card">★ 4.8</span>
+                                    <span class="downloads-card">50MI</span>
                                 </div>
-                            </div>
-                    </div>
-                
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="img/mine_capa.png" class="card-img-top" alt="Imagem do jogo eletrônico Minecraft">
-                        <div class="card-body">
-                            <h5 class="card-title mb-1">Minecraft</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color:#ffd700;">★ 4.9</span>
-                                <span style="color:#e83e8c;">350MI</span>
-                            </div>
-                            <small class="text-muted">Mojang</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="img/red_dead_2_capa.png" class="card-img-top" alt="Imagem do jogo eletrônico Red dead redemption 2">
-                        <div class="card-body">
-                            <h5 class="card-title mb-1">Red dead redemption 2</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color:#ffd700;">★ 4.9</span>
-                                <span style="color:#e83e8c;">75MI</span>
-                            </div>
-                            <small class="text-muted">Rockstar</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="img/days_gone_capa.jpg" class="card-img-top" alt="Imagem do jogo eletrônico Days gone">
-                        <div class="card-body">
-                            <h5 class="card-title mb-1">Days gone</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color:#ffd700;">★ 4.4</span>
-                                <span style="color:#e83e8c;">9MI</span>
+                                <small class="text-muted">Scott Cowthon</small>
                                 <span class=" badge-novo badge">Novo!</span>
                             </div>
-                            <small class="text-muted">Bend Studio</small>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="img/hollow_knight_capa.jpg" class="card-img-top" alt="Imagem do jogo eletrônico Hollow Knight">
-                        <div class="card-body">
-                            <h5 class="card-title mb-1">Hollow Knight</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color:#ffd700;">★ 4.8</span>
-                                <span style="color:#e83e8c;">50MI</span>
+                    <a href="minecraft.html" class="card-do-index">
+                        <div class="card h-100">
+                            <img src="img/mine_capa.png" class="imagem-do-card" alt="Imagem do jogo eletrônico Minecraft">
+                            <div class="card-body">
+                                <h5 class="titulo-do-card mb-1">Minecraft</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="avaliacao-card">★ 4.9</span>
+                                    <span class="downloads-card">350MI</span>
+                                </div>
+                                <small class="text-muted">Mojang</small>
                             </div>
-                            <small class="text-muted">Team Cherry</small>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="img/uncharted_4_capa.jpg" class="card-img-top" alt="Imagem do jogo eletrônico Uncharted 4">
-                        <div class="card-body">
-                            <h5 class="card-title mb-1">Uncharted 4</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color:#ffd700;">★ 4.9</span>
-                                <span style="color:#e83e8c;">30MI</span>
+                    <a href="red_dead_2.html" class="card-do-index">
+                        <div class="card h-100">
+                            <img src="img/red_dead_2_capa.png" class="imagem-do-card" alt="Imagem do jogo eletrônico Red dead redemption 2">
+                            <div class="card-body">
+                                <h5 class="titulo-do-card mb-1">Red dead redemption 2</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="avaliacao-card">★ 4.9</span>
+                                    <span class="downloads-card">75MI</span>
+                                </div>
+                                <small class="text-muted">Rockstar</small>
                             </div>
-                            <small class="text-muted">Naughty Dog</small>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="img/tlou_2_capa.jpg " class= "card-img-top" alt="Imagem do jogo eletrônico The Last of Us">
-                        <div class="card-body">
-                            <h5 class="card-title mb-1">The Last of Us</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color:#ffd700;">★ 4.8</span>
-                                <span style="color:#e83e8c;">25MI</span>
+                    <a href="days_gone.html" class="card-do-index">
+                        <div class="card h-100">
+                            <img src="img/days_gone_capa.jpg" class="imagem-do-card" alt="Imagem do jogo eletrônico Days gone">
+                            <div class="card-body">
+                                <h5 class="titulo-do-card mb-1">Days gone</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="avaliacao-card">★ 4.4</span>
+                                    <span class="downloads-card">9MI</span>
+                                    <span class=" badge-novo badge">Novo!</span>
+                                </div>
+                                <small class="text-muted">Bend Studio</small>
                             </div>
-                            <small class="text-muted">Naughty Dog</small>
-                            <span class=" badge-novo badge">Novo!</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="img/Inscryption_capa.jpeg" class="card-img-top" alt="Imagem do jogo eletrônico Five Nights at Freddy's">
-                        <div class="card-body">
-                            <h5 class="card-title mb-1">Inscryption</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="color:#ffd700;">★ 4.5</span>
-                                <span style="color:#e83e8c;">10MI</span>
+                    <a href="hollow_knight.html" class="card-do-index">
+                        <div class="card h-100">
+                            <img src="img/hollow_knight_capa.jpg" class="imagem-do-card" alt="Imagem do jogo eletrônico Hollow Knight">
+                            <div class="card-body">
+                                <h5 class="titulo-do-card mb-1">Hollow Knight</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="avaliacao-card">★ 4.8</span>
+                                    <span class="downloads-card">50MI</span>
+                                </div>
+                                <small class="text-muted">Team Cherry</small>
                             </div>
-                            <small class="text-muted">Devolver Digital</small>
                         </div>
-                    </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="uncharted_4.html" class="card-do-index">
+                        <div class="card h-100">
+                            <img src="img/uncharted_4_capa.jpg" class="imagem-do-card" alt="Imagem do jogo eletrônico Uncharted 4">
+                            <div class="card-body">
+                                <h5 class="titulo-do-card mb-1">Uncharted 4</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="avaliacao-card">★ 4.9</span>
+                                    <span class="downloads-card">30MI</span>
+                                </div>
+                                <small class="text-muted">Naughty Dog</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="tlou_p_2.html" class="card-do-index">
+                        <div class="card h-100">
+                            <img src="img/tlou_2_capa.jpg " class= "imagem-do-card" alt="Imagem do jogo eletrônico The Last of Us">
+                            <div class="card-body">
+                                <h5 class="titulo-do-card mb-1">The Last of Us parte 2</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="avaliacao-card">★ 4.8</span>
+                                    <span class="downloads-card">25MI</span>
+                                </div>
+                                <small class="text-muted">Naughty Dog</small>
+                                <span class=" badge-novo badge">Novo!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="inscryption.html" class="card-do-index">
+                        <div class="card h-100">
+                            <img src="img/Inscryption_capa.jpeg" class="imagem-do-card" alt="Imagem do jogo eletrônico Five Nights at Freddy's">
+                            <div class="card-body">
+                                <h5 class="titulo-do-card mb-1">Inscryption</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="avaliacao-card">★ 4.5</span>
+                                    <span class="downloads-card">10MI</span>
+                                </div>
+                                <small class="text-muted">Devolver Digital</small>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -211,38 +213,44 @@
                 </h2>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="card h-100 text-center bg-dark text-white">
-                            <img src="img/clair_obscure _capa.jpg" class="card-img-top mx-auto mt-3" alt="clair obscure expedition 33" style="width:150px; height:150px; object-fit:cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Clair Obscure: Expedition 33 </h5>
-                                <p class="card-text mb-1"><small class="text-muted">Data de lançamento: 24/04/2025</small></p>
-                                <a href="#" class="btn btn-pink btn-sm mt-2">Jogar</a>
+                        <a href="clair_obscure.html" class="card-do-index">
+                            <div class="card h-100 text-center bg-dark text-white">
+                                <img src="img/clair_obscure _capa.jpg" class="imagem-do-card mx-auto mt-3" alt="clair obscure expedition 33" style="width:150px; height:150px; object-fit:cover;">
+                                <div class="card-body">
+                                    <h5 class="titulo-do-card">Clair Obscure: Expedition 33 </h5>
+                                    <p class="card-text mb-1"><small class="text-muted">Data de lançamento: 24/04/2025</small></p>
+                                    <a href="https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/" class="btn btn-pink btn-sm mt-2">Jogar</a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card h-100 text-center bg-dark text-white">
-                            <img src="img/horizon_forbidden_west.png" class="card-img-top mx-auto mt-3" alt="Horizon Forbidden West" style="width:150px; height:150px; object-fit:cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Horizon Forbidden West</h5>
-                                <p class="card-text mb-1"><small class="text-muted">Data de lançamento: 18/02/2022</small></p>
-                                <a href="#" class="btn btn-pink btn-sm mt-2">Jogar</a>
+                        <a href="horizon_forbidden_west.html" class="card-do-index">
+                            <div class="card h-100 text-center bg-dark text-white">
+                                <img src="img/horizon_forbidden_west.png" class="imagem-do-card mx-auto mt-3" alt="Horizon Forbidden West" style="width:150px; height:150px; object-fit:cover;">
+                                <div class="card-body">
+                                    <h5 class="titulo-do-card">Horizon Forbidden West</h5>
+                                    <p class="card-text mb-1"><small class="text-muted">Data de lançamento: 18/02/2022</small></p>
+                                    <a href="https://store.steampowered.com/app/2420110/Horizon_Forbidden_West__Edio_Completa/" class="btn btn-pink btn-sm mt-2">Jogar</a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card h-100 text-center bg-dark text-white">
-                            <img src="img/dying_light_2_capa.jpeg" class="card-img-top mx-auto mt-3" alt="Dying Light 2" style="width:150px; height:150px; object-fit:cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Dying Light 2</h5>
-                                <p class="card-text mb-1"><small class="text-muted">Data de lançamento: 3/02/2022</small></p>
-                                <a href="#" class="btn btn-pink btn-sm mt-2">Jogar</a>
+                        <a href="dying_light_2.html" class="card-do-index">
+                            <div class="card h-100 text-center bg-dark text-white">
+                                <img src="img/dying_light_2_capa.jpeg" class="imagem-do-card mx-auto mt-3" alt="Dying Light 2" style="width:150px; height:150px; object-fit:cover;">
+                                <div class="card-body">
+                                    <h5 class="titulo-do-card">Dying Light 2</h5>
+                                    <p class="card-text mb-1"><small class="text-muted">Data de lançamento: 3/02/2022</small></p>
+                                    <a href="https://store.steampowered.com/app/534380/Dying_Light_2_Stay_Human_Reloaded_Edition/" class="btn btn-pink btn-sm mt-2">Jogar</a>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-4">
-                    <a href="#" class="btn btn-pink px-4 py-2 fw-bold rounded-pill"> Mais</a>
+                    <a href="navegacao.html" class="btn btn-pink px-4 py-2 fw-bold rounded-pill"> Mais</a>
                 </div>
             </div>
         </section>
@@ -257,6 +265,5 @@
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/own_script.js"></script>
 </body>
 </html>
