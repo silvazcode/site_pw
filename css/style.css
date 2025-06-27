@@ -133,19 +133,18 @@ body {
 }
 
 .bem-vindo-texto {
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     opacity: 0.85;
 }
 
 .banner-title {
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 900;
 }
 
 .texto-contraste {
     color: #e83e8c;
-    font-weight: 900;
 }
 
 .btn-pink {
@@ -395,7 +394,7 @@ nav {
 .jogos-description {
     max-width: 900px;
     margin: 40px auto 0 auto;
-    font-size: 30px;
+    font-size: 16px;
     color: #fff;
     background-color: #2d2f36;
     padding: 24px;
@@ -436,6 +435,10 @@ nav {
        
         font-size: 32px;
     }
+    .btn-pink {
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -469,6 +472,14 @@ nav {
 
     .game-info {
         align-items: center;
+    }
+
+    .btn-pink {
+         padding: 7px 12px;
+        font-size: 0.85rem;
+        width: 100%;
+        display: block;
+        margin: 0 auto 10px auto;
     }
 }
 
